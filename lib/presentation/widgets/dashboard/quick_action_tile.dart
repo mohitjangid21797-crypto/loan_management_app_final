@@ -39,9 +39,10 @@ class _QuickActionTileState extends State<QuickActionTile> {
           decoration: BoxDecoration(
             color: colors.surface,
             borderRadius: BorderRadius.circular(AppRadius.tile),
+            border: Border.all(color: colors.fieldBorder),
             boxShadow: [
               BoxShadow(
-                color: Colors.black.withValues(alpha: isDark ? 0.24 : 0.05),
+                color: Colors.black.withValues(alpha: isDark ? 0.24 : 0.04),
                 blurRadius: 12,
                 offset: const Offset(0, 4),
               ),

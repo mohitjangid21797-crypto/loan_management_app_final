@@ -33,6 +33,7 @@ class FloatingNavBar extends StatelessWidget {
         decoration: BoxDecoration(
           color: colors.surface,
           borderRadius: BorderRadius.circular(AppRadius.card),
+          border: Border.all(color: colors.fieldBorder),
           boxShadow: [
             BoxShadow(
               color: Colors.black.withValues(alpha: isDark ? 0.42 : 0.10),

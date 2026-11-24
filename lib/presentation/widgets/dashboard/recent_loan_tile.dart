@@ -32,6 +32,7 @@ class RecentLoanTile extends StatelessWidget {
         decoration: BoxDecoration(
           color: colors.surface,
           borderRadius: BorderRadius.circular(AppRadius.tile),
+          border: Border.all(color: colors.fieldBorder),
           boxShadow: [
             BoxShadow(
               color: Colors.black.withValues(alpha: isDark ? 0.22 : 0.04),

@@ -462,10 +462,11 @@ class _DashboardHeaderRow extends StatelessWidget {
                   decoration: BoxDecoration(
                     color: colors.surface,
                     borderRadius: BorderRadius.circular(14),
+                    border: Border.all(color: colors.fieldBorder),
                     boxShadow: [
                       BoxShadow(
                         color: Colors.black.withValues(
-                          alpha: isDark ? 0.25 : 0.06,
+                          alpha: isDark ? 0.25 : 0.05,
                         ),
                         blurRadius: 10,
                         offset: const Offset(0, 3),
