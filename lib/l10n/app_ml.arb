@@ -1,0 +1,348 @@
+{
+  "@@locale": "ml",
+  "appTitle": "LoanWise",
+  "splashTagline": "സ്മാർട്ട് വായ്പയും ഇഎംഐ ലെഡ്ജറും",
+  "loginTitle": "ലോഗിൻ",
+  "nameLabel": "പേര്",
+  "nameHint": "നിങ്ങളുടെ മുഴുവൻ പേര് നൽകുക",
+  "mobileLabel": "മൊബൈൽ നമ്പർ",
+  "mobileHint": "10 അക്ക മൊബൈൽ നമ്പർ",
+  "emailLabel": "ഇമെയിൽ ഐഡി",
+  "emailHint": "name@example.com",
+  "signInButton": "സൈൻ ഇൻ ചെയ്യുക",
+  "errorNameRequired": "ദയവായി നിങ്ങളുടെ പേര് നൽകുക",
+  "errorMobileInvalid": "6 മുതൽ 9 വരെ ആരംഭിക്കുന്ന 10 അക്ക മൊബൈൽ നമ്പർ നൽകുക",
+  "errorEmailInvalid": "സാധുവായ ഒരു ഇമെയിൽ വിലാസം നൽകുക",
+  "navHome": "ഹോം",
+  "navCustomers": "ഉപഭോക്താക്കൾ",
+  "navLoans": "വായ്പകൾ",
+  "navProfile": "പ്രൊഫൈൽ",
+  "welcomeBack": "വീണ്ടും സ്വാഗതം,",
+  "openMenuTooltip": "മെനു തുറക്കുക",
+  "openProfileTooltip": "പ്രൊഫൈൽ തുറക്കുക",
+  "totalLentLabel": "ആകെ നൽകിയ തുക",
+  "availableToCollect": "ശേഖരിക്കാൻ ബാക്കിയുള്ളത്",
+  "activeLoansLabel": "സജീവ വായ്പകൾ",
+  "customersLabel": "ഉപഭോക്താക്കൾ",
+  "emisDueThisMonthLabel": "ഈ മാസത്തെ ഇഎംഐകൾ",
+  "quickActionsHeading": "ദ്രുത പ്രവർത്തനങ്ങൾ",
+  "actionAddCustomer": "ഉപഭോക്താവിനെ ചേർക്കുക",
+  "actionCreateLoan": "വായ്പ സൃഷ്ടിക്കുക",
+  "actionLoans": "വായ്പകൾ",
+  "actionDocuments": "രേഖകൾ",
+  "actionAllCustomers": "എല്ലാ ഉപഭോക്താക്കളും",
+  "actionProfile": "പ്രൊഫൈൽ",
+  "thisMonthHeading": "ഈ മാസം",
+  "viewAll": "എല്ലാം കാണുക",
+  "collectedThisMonth": "ഈ മാസം ലഭിച്ചത്",
+  "pendingThisMonth": "ഈ മാസം ബാക്കിയുള്ളത്",
+  "recentLoansHeading": "സമീപകാല വായ്പകൾ",
+  "overdueEmisHeading": "കാലാവധി കഴിഞ്ഞ ഇഎംഐകൾ",
+  "statusActive": "സജീവം",
+  "statusCompleted": "പൂർത്തിയായി",
+  "statusOverdue": "കാലാവധി കഴിഞ്ഞു",
+  "statusPending": "തീർപ്പാകാത്തത്",
+  "statusPaid": "അടച്ചു",
+  "nextEmiLabel": "അടുത്ത ഇഎംഐ: {date}",
+  "@nextEmiLabel": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "dueSinceLabel": "അടയ്‌ക്കേണ്ട തീയതി: {date}",
+  "@dueSinceLabel": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "emptyRecentLoans": "സമീപകാല വായ്പകളൊന്നുമില്ല. ഇവിടെ കാണാൻ ഒരു വായ്പ സൃഷ്ടിക്കുക.",
+  "emptyOverdueEmis": "എല്ലാം കൃത്യമാണ്. കാലാവധി കഴിഞ്ഞ ഇഎംഐകളൊന്നുമില്ല.",
+  "drawerBackupRestore": "ബാക്കപ്പും റീസ്റ്റോറും",
+  "drawerChangeTheme": "തീം മാറ്റുക",
+  "drawerChooseLanguage": "ഭാഷ തിരഞ്ഞെടുക്കുക",
+  "themeLight": "ലൈറ്റ്",
+  "themeDark": "ഡാർക്ക്",
+  "themeSystem": "സിസ്റ്റം",
+  "backupDialogMessage": "നിങ്ങളുടെ ഉപകരണത്തിൽ ലോക്കൽ ബാക്കപ്പ് അപ്‌ഡേറ്റ് ചെയ്‌തിരിക്കുന്നു.",
+  "closeAction": "അടയ്ക്കുക",
+  "featureQueuedMessage": "{feature} തയ്യാറാണ്.",
+  "@featureQueuedMessage": {
+    "placeholders": {
+      "feature": {
+        "type": "String"
+      }
+    }
+  },
+  "tabCustomersSubtitle": "വായ്പക്കാരെയും ബന്ധപ്പെടാനുള്ള വിവരങ്ങളും സജീവ വായ്പകളും കൈകാര്യം ചെയ്യുക.",
+  "tabLoansSubtitle": "സജീവ വായ്പകളും പലിശയും ഇഎംഐ ഷെഡ്യൂളുകളും നിരീക്ഷിക്കുക.",
+  "tabProfileSubtitle": "രജിസ്റ്റർ ചെയ്ത വായ്പാ ദാതാവിന്റെ വിവരങ്ങളും ക്രമീകരണങ്ങളും.",
+  "signOutAction": "സൈൻ ഔട്ട്",
+  "addCustomerTitle": "ഉപഭോക്താവിനെ ചേർക്കുക",
+  "editCustomerTitle": "ഉപഭോക്താവിനെ തിരുത്തുക",
+  "customerNameLabel": "ഉപഭോക്താവിന്റെ പേര്",
+  "customerEmailLabel": "ഉപഭോക്താവിന്റെ ഇമെയിൽ",
+  "customerMobileLabel": "മൊബൈൽ നമ്പർ",
+  "customerLocationLabel": "സ്ഥലം",
+  "locationRequiredError": "ദയവായി സ്ഥലം നൽകുക",
+  "saveCustomerButton": "ഉപഭോക്താവിനെ സേവ് ചെയ്യുക",
+  "updateCustomerButton": "വിവരങ്ങൾ പുതുക്കുക",
+  "customerAddedTitle": "ഉപഭോക്താവിനെ വിജയകരമായി ചേർത്തു",
+  "customerAddedMessage": "{name}-ന് ഇപ്പോൾ ഒരു വായ്പ സൃഷ്ടിക്കണോ?",
+  "@customerAddedMessage": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "laterButton": "പിന്നീട്",
+  "searchCustomersHint": "പേര് അല്ലെങ്കിൽ മൊബൈൽ വഴി തിരയുക",
+  "noCustomersTitle": "ഉപഭോക്താക്കളെ കണ്ടെത്തിയില്ല",
+  "noCustomersSubtitle": "ആദ്യ ഉപഭോക്താവിനെ ചേർക്കാൻ + ടാപ്പ് ചെയ്യുക.",
+  "editCustomerMenu": "വിവരങ്ങൾ തിരുത്തുക",
+  "deleteCustomerMenu": "ഉപഭോക്താവിനെ നീക്കം ചെയ്യുക",
+  "createLoanMenu": "വായ്പ സൃഷ്ടിക്കുക",
+  "deleteCustomerConfirmTitle": "ഉപഭോക്താവിനെ നീക്കം ചെയ്യണോ?",
+  "deleteCustomerConfirmMessage": "{name}-നെ സജീവ ഉപഭോക്തൃ പട്ടികയിൽ നിന്ന് മാറ്റും.",
+  "@deleteCustomerConfirmMessage": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteAction": "നീക്കം ചെയ്യുക",
+  "cancelAction": "റദ്ദാക്കുക",
+  "activeLoanDeleteBlocked": "സജീവ വായ്പയുള്ള ഉപഭോക്താവിനെ നീക്കം ചെയ്യാനാകില്ല.",
+  "duplicateMobileError": "ഈ മൊബൈൽ നമ്പറിൽ ഒരു ഉപഭോക്താവ് നിലവിലുണ്ട്.",
+  "customerDetailTitle": "ഉപഭോക്താവിന്റെ വിവരങ്ങൾ",
+  "callAction": "വിളിക്കുക",
+  "smsAction": "എസ്എംഎസ്",
+  "customerLoansHeading": "ഉപഭോക്താവിന്റെ വായ്പകൾ",
+  "mobileLockedHelper": "വായ്പകൾ ഉള്ളപ്പോൾ മൊബൈൽ നമ്പർ മാറ്റാനാകില്ല.",
+  "activeLoansCountLabel": "{count} സജീവം",
+  "@activeLoansCountLabel": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "createLoanTitle": "വായ്പ സൃഷ്ടിക്കുക",
+  "searchCustomerMobileHint": "10 അക്ക മൊബൈൽ നമ്പർ നൽകുക",
+  "noCustomerWithMobile": "ഈ മൊബൈൽ നമ്പറിൽ ഉപഭോക്താവില്ല",
+  "addCustomerShortcut": "ഉപഭോക്താവിനെ ചേർക്കുക",
+  "principalLabel": "മുതൽ തുക (₹)",
+  "monthlyRateLabel": "പ്രതിമാസ പലിശ നിരക്ക് (%)",
+  "tenureMonthsLabel": "കാലാവധി (മാസങ്ങൾ)",
+  "loanTypeLabel": "പലിശ തരം",
+  "loanTypeSimple": "ലളിത പലിശ",
+  "loanTypeCompound": "കൂട്ടുപലിശ",
+  "startDateLabel": "ആരംഭ തീയതി",
+  "livePreviewHeading": "തത്സമയ ഇഎംഐ പ്രിവ്യൂ",
+  "monthlyEmiLabel": "പ്രതിമാസ ഇഎംഐ",
+  "totalInterestLabel": "ആകെ പലിശ",
+  "totalPayableLabel": "ആകെ അടയ്ക്കേണ്ട തുക",
+  "createLoanButton": "വായ്പ സൃഷ്ടിക്കുക",
+  "loanCreatedTitle": "വായ്പ വിജയകരമായി സൃഷ്ടിച്ചു",
+  "loanCreatedMessage": "{count} പ്രതിമാസ ഇഎംഐകൾ തയ്യാറാക്കി.",
+  "@loanCreatedMessage": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "viewLoanOverview": "വായ്പാ അവലോകനം കാണുക",
+  "allLoansFilter": "എല്ലാം",
+  "activeLoansFilter": "സജീവം",
+  "completedLoansFilter": "പൂർത്തിയായത്",
+  "noLoansTitle": "വായ്പകളൊന്നുമില്ല",
+  "noLoansSubtitle": "ഇഎംഐ ഷെഡ്യൂൾ തയ്യാറാക്കാൻ ഒരു വായ്പ സൃഷ്ടിക്കുക.",
+  "selectCustomerError": "ആദ്യം 10 അക്ക മൊബൈൽ വഴി ഉപഭോക്താവിനെ തിരഞ്ഞെടുക്കുക.",
+  "invalidPrincipalError": "0-നേക്കാൾ വലിയ മുതൽ തുക നൽകുക.",
+  "invalidRateError": "0-നും 100-നും ഇടയിലുള്ള പ്രതിമാസ നിരക്ക് നൽകുക.",
+  "invalidTenureError": "1-നും 600-നും ഇടയിലുള്ള കാലാവധി നൽകുക.",
+  "loanOverviewTitle": "വായ്പാ അവലോകനം",
+  "emiScheduleHeading": "ഇഎംഐ ഷെഡ്യൂൾ",
+  "payButton": "അടയ്ക്കുക",
+  "payAllPendingButton": "ബാക്കിയുള്ള എല്ലാ ഇഎംഐകളും അടയ്ക്കുക",
+  "confirmPayEmiTitle": "ഇഎംഐ #{no} അടച്ചതായി രേഖപ്പെടുത്തണോ?",
+  "@confirmPayEmiTitle": {
+    "placeholders": {
+      "no": {
+        "type": "int"
+      }
+    }
+  },
+  "confirmPayEmiMessage": "{amount} അടവ് സ്ഥിരീകരിക്കുക.",
+  "@confirmPayEmiMessage": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "paymentDateLabel": "അടച്ച തീയതി",
+  "confirmPayAllTitle": "ബാക്കിയുള്ള എല്ലാ ഇഎംഐകളും അടയ്ക്കണോ?",
+  "confirmPayAllMessage": "ഇത് ബാക്കിയുള്ള {count} ഇഎംഐകൾ ({amount}) അടച്ചതായി രേഖപ്പെടുത്തി വായ്പാ കരാർ പിഡിഎഫ് തയ്യാറാക്കും.",
+  "@confirmPayAllMessage": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "installmentLabel": "തവണ #{no}",
+  "@installmentLabel": {
+    "placeholders": {
+      "no": {
+        "type": "int"
+      }
+    }
+  },
+  "paidOnLabel": "അടച്ചത്: {date}",
+  "@paidOnLabel": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "outOfOrderEmiError": "ദയവായി മുമ്പുള്ള തീർപ്പാകാത്ത തവണകൾ ക്രമത്തിൽ അടയ്ക്കുക.",
+  "emiPaidSuccess": "തവണ #{no} അടച്ചതായി രേഖപ്പെടുത്തി.",
+  "@emiPaidSuccess": {
+    "placeholders": {
+      "no": {
+        "type": "int"
+      }
+    }
+  },
+  "loanCompletedPdfGenerated": "വായ്പ പൂർത്തിയായി! കരാർ പിഡിഎഫ് രേഖകളിൽ സേവ് ചെയ്തു.",
+  "viewPdfAction": "പിഡിഎഫ് കാണുക",
+  "openDocumentsAction": "രേഖകൾ തുറക്കുക",
+  "progressPaidLabel": "{total}-ൽ {paid} ഇഎംഐകൾ അടച്ചു",
+  "@progressPaidLabel": {
+    "placeholders": {
+      "paid": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "ledgerHeading": "ലെഡ്ജർ ചരിത്രം",
+  "ledgerDebitLabel": "ഡെബിറ്റ്",
+  "ledgerCreditLabel": "ക്രെഡിറ്റ്",
+  "ledgerBalanceLabel": "ബാക്കി",
+  "documentsTitle": "രേഖകൾ",
+  "noDocumentsTitle": "പിഡിഎഫ് രേഖകളൊന്നുമില്ല",
+  "noDocumentsSubtitle": "വായ്പ പൂർണ്ണമായി അടച്ചുകഴിയുമ്പോൾ കരാർ ഇവിടെ കാണാം.",
+  "viewPdfMenu": "പിഡിഎഫ് കാണുക",
+  "sharePdfMenu": "പിഡിഎഫ് പങ്കിടുക",
+  "deletePdfMenu": "പിഡിഎഫ് നീക്കം ചെയ്യുക",
+  "editPdfMenu": "പിഡിഎഫ് തിരുത്തുക",
+  "deletePdfConfirmTitle": "രേഖ നീക്കം ചെയ്യണോ?",
+  "deletePdfConfirmMessage": "ഇത് തയ്യാറാക്കിയ വായ്പാ കരാർ രേഖകളിൽ നിന്ന് നീക്കം ചെയ്യും.",
+  "pagesCountLabel": "{count} പേജുകൾ",
+  "@pagesCountLabel": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "documentViewerTitle": "വായ്പാ കരാർ വ്യൂവർ",
+  "loanAgreementHeadline": "വായ്പാ കരാർ",
+  "lenderDetailsHeading": "വായ്പാ ദാതാവിന്റെ വിവരങ്ങൾ",
+  "borrowerDetailsHeading": "വായ്പക്കാരന്റെ വിവരങ്ങൾ",
+  "installmentScheduleHeading": "തവണ ഷെഡ്യൂൾ",
+  "generatedOnLabel": "തയ്യാറാക്കിയ തീയതി",
+  "documentIdLabel": "രേഖാ ഐഡി",
+  "pageOfLabel": "പേജ് {current} / {total}",
+  "@pageOfLabel": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "signatureLender": "വായ്പാ ദാതാവിന്റെ ഒപ്പ്",
+  "signatureBorrower": "വായ്പക്കാരന്റെ ഒപ്പ്",
+  "editPdfTitle": "പിഡിഎഫ് തിരുത്തുക",
+  "snapshotNotice": "മാറ്റങ്ങൾ ഈ പിഡിഎഫ് സ്നാപ്ഷോട്ടിൽ മാത്രമേ ബാധകമാകൂ; യഥാർത്ഥ വായ്പയോ ലെഡ്ജറോ മാറില്ല.",
+  "pdfLanguageLabel": "രേഖയുടെ ഭാഷ",
+  "statusTextLabel": "സ്റ്റാറ്റസ് വാചകം",
+  "previewButton": "പ്രിവ്യൂ",
+  "regeneratePdfButton": "പിഡിഎഫ് വീണ്ടും നിർമ്മിക്കുക",
+  "pdfRegeneratedSuccess": "രേഖ വിജയകരമായി വീണ്ടും നിർമ്മിച്ചു.",
+  "shareReadyMessage": "പങ്കിടുന്നതിനായി {title} ({pages} പേജുകൾ) തയ്യാറാക്കി.",
+  "@shareReadyMessage": {
+    "placeholders": {
+      "title": {
+        "type": "String"
+      },
+      "pages": {
+        "type": "int"
+      }
+    }
+  },
+  "copyHtmlAction": "HTML പകർത്തുക",
+  "htmlCopiedMessage": "A4 HTML ക്ലിപ്പ്ബോർഡിലേക്ക് പകർത്തി.",
+  "saveChangesButton": "മാറ്റങ്ങൾ സേവ് ചെയ്യുക",
+  "profileUpdatedSuccess": "പ്രൊഫൈൽ വിജയകരമായി പുതുക്കി.",
+  "signOutConfirmTitle": "സൈൻ ഔട്ട് ചെയ്യണോ?",
+  "signOutConfirmMessage": "നിങ്ങളുടെ വിവരങ്ങൾ ഉപയോഗിച്ച് എപ്പോൾ വേണമെങ്കിലും തിരികെ പ്രവേശിക്കാം.",
+  "totalLoansStatLabel": "ആകെ വായ്പകൾ",
+  "documentsStatLabel": "രേഖകൾ",
+  "backupTitle": "ബാക്കപ്പും റീസ്റ്റോറും",
+  "backupSubtitle": "ലോക്കൽ സ്നാപ്ഷോട്ട് എക്‌സ്‌പോർട്ട് ചെയ്യുക അല്ലെങ്കിൽ ലെഡ്ജർ റീസ്റ്റോർ ചെയ്യുക.",
+  "exportBackupButton": "ലോക്കൽ ബാക്കപ്പ് സൃഷ്ടിക്കുക",
+  "restoreBackupButton": "സ്നാപ്ഷോട്ട് റീസ്റ്റോർ ചെയ്യുക",
+  "backupGeneratedMessage": "ബാക്കപ്പ് സ്നാപ്ഷോട്ട് ക്ലിപ്പ്ബോർഡിലേക്ക് പകർത്തി.",
+  "restoreSuccessMessage": "ബാക്കപ്പ് സ്നാപ്ഷോട്ട് വിജയകരമായി റീസ്റ്റോർ ചെയ്തു.",
+  "restoreInvalidError": "അസാധുവായ ബാക്കപ്പ് സ്നാപ്ഷോട്ട് JSON.",
+  "pasteBackupHint": "റീസ്റ്റോർ ചെയ്യാൻ ബാക്കപ്പ് JSON ഇവിടെ ഒട്ടിക്കുക",
+  "driveComingSoonNote": "Google Drive എൻക്രിപ്റ്റഡ് AppData സിങ്ക് സ്റ്റേജ് 6-ൽ വരും.",
+  "emiPdfButton": "EMI PDF",
+  "viewCompletePdfButton": "പൂർണ്ണ വായ്പ PDF",
+  "emiPdfGeneratedMessage": "തവണ #{no} അടച്ചു, PDF രേഖകളിൽ സംരക്ഷിച്ചു.",
+  "emiReceiptTag": "EMI #{no} രസീത്",
+  "completeLoanPdfTag": "പൂർണ്ണ വായ്പ PDF",
+  "emiCalculatorTitle": "EMI കാൽക്കുലേറ്റർ",
+  "emiCalculatorSubtitle": "വായ്പ സൃഷ്ടിക്കുന്നതിന് മുമ്പ് പ്രതിമാസ തവണയും ആകെ പലിശയും തിരിച്ചടവ് പട്ടികയും കണക്കാക്കുക.",
+  "principalShareLabel": "മുതൽ വിഹിതം",
+  "interestShareLabel": "പലിശ വിഹിതം",
+  "resetFieldsButton": "പുനഃസജ്ജമാക്കുക",
+  "proceedToCreateLoanButton": "ഈ വിവരങ്ങളോടെ വായ്പ സൃഷ്ടിക്കുക",
+  "schedulePreviewHeading": "പട്ടിക പ്രിവ്യൂ",
+  "enterTermsForEstimate": "EMI കണക്കാക്കാൻ മുതൽ, പ്രതിമാസ നിരക്ക്, കാലാവധി എന്നിവ നൽകുക.",
+  "systemDefaultLanguage": "സിസ്റ്റം ഡിഫോൾട്ട്",
+  "choosePhotoTitle": "പ്രൊഫൈൽ ഫോട്ടോ",
+  "pickFromGallery": "ഗാലറിയിൽ നിന്ന് തിരഞ്ഞെടുക്കുക",
+  "takePhoto": "ഫോട്ടോ എടുക്കുക",
+  "removePhoto": "ഫോട്ടോ നീക്കം ചെയ്യുക",
+  "changeAvatarColor": "ബാഡ്ജ് നിറം മാറ്റുക",
+  "photoPickFailedError": "തിരഞ്ഞെടുത്ത ചിത്രം ലോഡ് ചെയ്യാനായില്ല.",
+  "databaseError": "ഡാറ്റ പ്രാദേശികമായി സംരക്ഷിക്കാനായില്ല. ദയവായി വീണ്ടും ശ്രമിക്കുക.",
+  "onboardingSkip": "ഒഴിവാക്കുക",
+  "onboardingStart": "ആരംഭിക്കുക",
+  "onboardingNext": "അടുത്തത്",
+  "onboardingTitle1": "സ്മാർട്ട് വായ്പാ ഹബ്",
+  "onboardingSubtitle1": "ഉപഭോക്താക്കളെ നിയന്ത്രിക്കുക, സാധാരണ അല്ലെങ്കിൽ കൂട്ടുപലിശ വായ്പകൾ ഓഫ്‌ലൈനിൽ സൃഷ്ടിക്കുക.",
+  "onboardingTitle2": "EMI & ലെഡ്ജർ ട്രാക്ക്",
+  "onboardingSubtitle2": "പ്രതിമാസ തവണകളും തീയതികളും പിരിവുകളും ഒറ്റനോട്ടത്തിൽ നിരീക്ഷിക്കുക.",
+  "onboardingTitle3": "ഉടനടി വായ്പാ കരാറുകൾ",
+  "onboardingSubtitle3": "മുഴുവൻ തുകയും അടച്ചുകഴിയുമ്പോൾ 13 ഭാഷകളിൽ സ്വയമേവ A4 വായ്പാ കരാർ PDF തയ്യാറാക്കുക."
+}

@@ -1,0 +1,348 @@
+{
+  "@@locale": "pa",
+  "appTitle": "LoanWise",
+  "splashTagline": "ਸਮਾਰਟ ਕਰਜ਼ਾ ਅਤੇ EMI ਖਾਤਾ",
+  "loginTitle": "ਲੌਗਇਨ",
+  "nameLabel": "ਨਾਮ",
+  "nameHint": "ਆਪਣਾ ਪੂਰਾ ਨਾਮ ਦਰਜ ਕਰੋ",
+  "mobileLabel": "ਮੋਬਾਈਲ ਨੰਬਰ",
+  "mobileHint": "10 ਅੰਕਾਂ ਦਾ ਮੋਬਾਈਲ ਨੰਬਰ",
+  "emailLabel": "ਈਮੇਲ ਆਈਡੀ",
+  "emailHint": "name@example.com",
+  "signInButton": "ਸਾਈਨ ਇਨ ਕਰੋ",
+  "errorNameRequired": "ਕਿਰਪਾ ਕਰਕੇ ਆਪਣਾ ਨਾਮ ਦਰਜ ਕਰੋ",
+  "errorMobileInvalid": "6 ਤੋਂ 9 ਨਾਲ ਸ਼ੁਰੂ ਹੋਣ ਵਾਲਾ 10 ਅੰਕਾਂ ਦਾ ਮੋਬਾਈਲ ਨੰਬਰ ਦਰਜ ਕਰੋ",
+  "errorEmailInvalid": "ਇੱਕ ਵੈਧ ਈਮੇਲ ਪਤਾ ਦਰਜ ਕਰੋ",
+  "navHome": "ਹੋਮ",
+  "navCustomers": "ਗਾਹਕ",
+  "navLoans": "ਕਰਜ਼ੇ",
+  "navProfile": "ਪ੍ਰੋਫਾਈਲ",
+  "welcomeBack": "ਵਾਪਸੀ ਤੇ ਸਵਾਗਤ ਹੈ,",
+  "openMenuTooltip": "ਮੇਨੂ ਖੋਲ੍ਹੋ",
+  "openProfileTooltip": "ਪ੍ਰੋਫਾਈਲ ਖੋਲ੍ਹੋ",
+  "totalLentLabel": "ਕੁੱਲ ਦਿੱਤਾ ਕਰਜ਼ਾ",
+  "availableToCollect": "ਵਸੂਲੀ ਲਈ ਉਪਲਬਧ",
+  "activeLoansLabel": "ਸਰਗਰਮ ਕਰਜ਼ੇ",
+  "customersLabel": "ਗਾਹਕ",
+  "emisDueThisMonthLabel": "ਇਸ ਮਹੀਨੇ ਦੀਆਂ EMI",
+  "quickActionsHeading": "ਤੁਰੰਤ ਕਾਰਵਾਈਆਂ",
+  "actionAddCustomer": "ਗਾਹਕ ਜੋੜੋ",
+  "actionCreateLoan": "ਕਰਜ਼ਾ ਬਣਾਓ",
+  "actionLoans": "ਕਰਜ਼ੇ",
+  "actionDocuments": "ਦਸਤਾਵੇਜ਼",
+  "actionAllCustomers": "ਸਾਰੇ ਗਾਹਕ",
+  "actionProfile": "ਪ੍ਰੋਫਾਈਲ",
+  "thisMonthHeading": "ਇਸ ਮਹੀਨੇ",
+  "viewAll": "ਸਭ ਵੇਖੋ",
+  "collectedThisMonth": "ਇਸ ਮਹੀਨੇ ਵਸੂਲਿਆ",
+  "pendingThisMonth": "ਇਸ ਮਹੀਨੇ ਬਕਾਇਆ",
+  "recentLoansHeading": "ਹਾਲੀਆ ਕਰਜ਼ੇ",
+  "overdueEmisHeading": "ਮਿਆਦ ਪੁੱਗੀਆਂ EMI",
+  "statusActive": "ਸਰਗਰਮ",
+  "statusCompleted": "ਪੂਰਾ",
+  "statusOverdue": "ਮਿਆਦ ਪੁੱਗੀ",
+  "statusPending": "ਬਕਾਇਆ",
+  "statusPaid": "ਭੁਗਤਾਨ ਹੋਇਆ",
+  "nextEmiLabel": "ਅਗਲੀ EMI: {date}",
+  "@nextEmiLabel": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "dueSinceLabel": "ਬਕਾਇਆ ਮਿਤੀ: {date}",
+  "@dueSinceLabel": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "emptyRecentLoans": "ਅਜੇ ਕੋਈ ਹਾਲੀਆ ਕਰਜ਼ਾ ਨਹੀਂ ਹੈ। ਇੱਥੇ ਵੇਖਣ ਲਈ ਕਰਜ਼ਾ ਬਣਾਓ।",
+  "emptyOverdueEmis": "ਸਭ ਠੀਕ ਹੈ। ਕੋਈ ਮਿਆਦ ਪੁੱਗੀ EMI ਨਹੀਂ ਹੈ।",
+  "drawerBackupRestore": "ਬੈਕਅੱਪ ਅਤੇ ਰੀਸਟੋਰ",
+  "drawerChangeTheme": "ਥੀਮ ਬਦਲੋ",
+  "drawerChooseLanguage": "ਭਾਸ਼ਾ ਚੁਣੋ",
+  "themeLight": "ਲਾਈਟ",
+  "themeDark": "ਡਾਰਕ",
+  "themeSystem": "ਸਿਸਟਮ",
+  "backupDialogMessage": "ਤੁਹਾਡੀ ਡਿਵਾਈਸ ਲਈ ਲੋਕਲ ਬੈਕਅੱਪ ਅੱਪਡੇਟ ਹੈ।",
+  "closeAction": "ਬੰਦ ਕਰੋ",
+  "featureQueuedMessage": "{feature} ਤਿਆਰ ਹੈ।",
+  "@featureQueuedMessage": {
+    "placeholders": {
+      "feature": {
+        "type": "String"
+      }
+    }
+  },
+  "tabCustomersSubtitle": "ਕਰਜ਼ਦਾਰਾਂ, ਸੰਪਰਕ ਵੇਰਵਿਆਂ ਅਤੇ ਸਰਗਰਮ ਕਰਜ਼ਿਆਂ ਦਾ ਪ੍ਰਬੰਧਨ ਕਰੋ।",
+  "tabLoansSubtitle": "ਸਰਗਰਮ ਕਰਜ਼ੇ, ਵਿਆਜ ਅਤੇ EMI ਸਾਰਣੀ ਵੇਖੋ।",
+  "tabProfileSubtitle": "ਤੁਹਾਡੇ ਦਰਜ ਕਰਜ਼ਦਾਤਾ ਵੇਰਵੇ ਅਤੇ ਤਰਜੀਹਾਂ।",
+  "signOutAction": "ਸਾਈਨ ਆਊਟ",
+  "addCustomerTitle": "ਗਾਹਕ ਜੋੜੋ",
+  "editCustomerTitle": "ਗਾਹਕ ਸੋਧੋ",
+  "customerNameLabel": "ਗਾਹਕ ਦਾ ਨਾਮ",
+  "customerEmailLabel": "ਗਾਹਕ ਦੀ ਈਮੇਲ",
+  "customerMobileLabel": "ਮੋਬਾਈਲ ਨੰਬਰ",
+  "customerLocationLabel": "ਟਿਕਾਣਾ",
+  "locationRequiredError": "ਕਿਰਪਾ ਕਰਕੇ ਟਿਕਾਣਾ ਦਰਜ ਕਰੋ",
+  "saveCustomerButton": "ਗਾਹਕ ਸੰਭਾਲੋ",
+  "updateCustomerButton": "ਗਾਹਕ ਅੱਪਡੇਟ ਕਰੋ",
+  "customerAddedTitle": "ਗਾਹਕ ਸਫਲਤਾਪੂਰਵਕ ਜੋੜਿਆ ਗਿਆ",
+  "customerAddedMessage": "ਕੀ ਤੁਸੀਂ ਹੁਣ {name} ਲਈ ਕਰਜ਼ਾ ਬਣਾਉਣਾ ਚਾਹੁੰਦੇ ਹੋ?",
+  "@customerAddedMessage": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "laterButton": "ਬਾਅਦ ਵਿੱਚ",
+  "searchCustomersHint": "ਨਾਮ ਜਾਂ ਮੋਬਾਈਲ ਨਾਲ ਖੋਜੋ",
+  "noCustomersTitle": "ਕੋਈ ਗਾਹਕ ਨਹੀਂ ਮਿਲਿਆ",
+  "noCustomersSubtitle": "ਆਪਣਾ ਪਹਿਲਾ ਗਾਹਕ ਜੋੜਨ ਲਈ + ਦਬਾਓ।",
+  "editCustomerMenu": "ਵੇਰਵੇ ਸੋਧੋ",
+  "deleteCustomerMenu": "ਗਾਹਕ ਹਟਾਓ",
+  "createLoanMenu": "ਕਰਜ਼ਾ ਬਣਾਓ",
+  "deleteCustomerConfirmTitle": "ਗਾਹਕ ਹਟਾਓ?",
+  "deleteCustomerConfirmMessage": "ਇਹ {name} ਨੂੰ ਤੁਹਾਡੀ ਸਰਗਰਮ ਸੂਚੀ ਵਿੱਚੋਂ ਹਟਾ ਦੇਵੇਗਾ।",
+  "@deleteCustomerConfirmMessage": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteAction": "ਹਟਾਓ",
+  "cancelAction": "ਰੱਦ ਕਰੋ",
+  "activeLoanDeleteBlocked": "ਸਰਗਰਮ ਕਰਜ਼ੇ ਵਾਲੇ ਗਾਹਕ ਨੂੰ ਹਟਾਇਆ ਨਹੀਂ ਜਾ ਸਕਦਾ।",
+  "duplicateMobileError": "ਇਸ ਮੋਬਾਈਲ ਨੰਬਰ ਵਾਲਾ ਗਾਹਕ ਪਹਿਲਾਂ ਹੀ ਮੌਜੂਦ ਹੈ।",
+  "customerDetailTitle": "ਗਾਹਕ ਦੇ ਵੇਰਵੇ",
+  "callAction": "ਕਾਲ",
+  "smsAction": "SMS",
+  "customerLoansHeading": "ਗਾਹਕ ਦੇ ਕਰਜ਼ੇ",
+  "mobileLockedHelper": "ਕਰਜ਼ੇ ਮੌਜੂਦ ਹੋਣ ਤੇ ਮੋਬਾਈਲ ਨੰਬਰ ਬਦਲਿਆ ਨਹੀਂ ਜਾ ਸਕਦਾ।",
+  "activeLoansCountLabel": "{count} ਸਰਗਰਮ",
+  "@activeLoansCountLabel": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "createLoanTitle": "ਕਰਜ਼ਾ ਬਣਾਓ",
+  "searchCustomerMobileHint": "10 ਅੰਕਾਂ ਦਾ ਮੋਬਾਈਲ ਦਰਜ ਕਰੋ",
+  "noCustomerWithMobile": "ਇਸ ਮੋਬਾਈਲ ਨਾਲ ਕੋਈ ਗਾਹਕ ਨਹੀਂ",
+  "addCustomerShortcut": "ਗਾਹਕ ਜੋੜੋ",
+  "principalLabel": "ਮੂਲ ਰਕਮ (₹)",
+  "monthlyRateLabel": "ਮਾਸਿਕ ਵਿਆਜ ਦਰ (%)",
+  "tenureMonthsLabel": "ਮਿਆਦ (ਮਹੀਨੇ)",
+  "loanTypeLabel": "ਵਿਆਜ ਦੀ ਕਿਸਮ",
+  "loanTypeSimple": "ਸਾਧਾਰਨ",
+  "loanTypeCompound": "ਮਿਸ਼ਰਿਤ",
+  "startDateLabel": "ਸ਼ੁਰੂਆਤੀ ਮਿਤੀ",
+  "livePreviewHeading": "ਲਾਈਵ EMI ਪ੍ਰੀਵਿਊ",
+  "monthlyEmiLabel": "ਮਾਸਿਕ EMI",
+  "totalInterestLabel": "ਕੁੱਲ ਵਿਆਜ",
+  "totalPayableLabel": "ਕੁੱਲ ਭੁਗਤਾਨਯੋਗ",
+  "createLoanButton": "ਕਰਜ਼ਾ ਬਣਾਓ",
+  "loanCreatedTitle": "ਕਰਜ਼ਾ ਸਫਲਤਾਪੂਰਵਕ ਬਣਿਆ",
+  "loanCreatedMessage": "{count} ਮਾਸਿਕ EMI ਬਣਾਈਆਂ ਗਈਆਂ ਹਨ।",
+  "@loanCreatedMessage": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "viewLoanOverview": "ਕਰਜ਼ਾ ਸਾਰ ਖੋਲ੍ਹੋ",
+  "allLoansFilter": "ਸਭ",
+  "activeLoansFilter": "ਸਰਗਰਮ",
+  "completedLoansFilter": "ਪੂਰਾ ਹੋਇਆ",
+  "noLoansTitle": "ਅਜੇ ਕੋਈ ਕਰਜ਼ਾ ਨਹੀਂ",
+  "noLoansSubtitle": "EMI ਸਾਰਣੀ ਬਣਾਉਣ ਲਈ ਕਰਜ਼ਾ ਬਣਾਓ।",
+  "selectCustomerError": "ਪਹਿਲਾਂ 10 ਅੰਕਾਂ ਦੇ ਮੋਬਾਈਲ ਨਾਲ ਗਾਹਕ ਚੁਣੋ।",
+  "invalidPrincipalError": "0 ਤੋਂ ਵੱਧ ਮੂਲ ਰਕਮ ਦਰਜ ਕਰੋ।",
+  "invalidRateError": "0 ਤੋਂ 100 ਦੇ ਵਿਚਕਾਰ ਮਾਸਿਕ ਦਰ ਦਰਜ ਕਰੋ।",
+  "invalidTenureError": "1 ਤੋਂ 600 ਮਹੀਨਿਆਂ ਦੀ ਮਿਆਦ ਦਰਜ ਕਰੋ।",
+  "loanOverviewTitle": "ਕਰਜ਼ੇ ਦਾ ਸਾਰ",
+  "emiScheduleHeading": "EMI ਸਾਰਣੀ",
+  "payButton": "ਭੁਗਤਾਨ ਕਰੋ",
+  "payAllPendingButton": "ਸਾਰੀਆਂ ਬਕਾਇਆ EMI ਭੁਗਤਾਨ ਕਰੋ",
+  "confirmPayEmiTitle": "EMI #{no} ਭੁਗਤਾਨ ਹੋਈ ਮੰਨੋ?",
+  "@confirmPayEmiTitle": {
+    "placeholders": {
+      "no": {
+        "type": "int"
+      }
+    }
+  },
+  "confirmPayEmiMessage": "{amount} ਦੇ ਭੁਗਤਾਨ ਦੀ ਪੁਸ਼ਟੀ ਕਰੋ।",
+  "@confirmPayEmiMessage": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "paymentDateLabel": "ਭੁਗਤਾਨ ਮਿਤੀ",
+  "confirmPayAllTitle": "ਸਾਰੀਆਂ ਬਕਾਇਆ EMI ਭੁਗਤਾਨ ਕਰੋ?",
+  "confirmPayAllMessage": "ਇਹ {count} ਬਾਕੀ EMI ({amount}) ਭੁਗਤਾਨ ਕਰੇਗਾ ਅਤੇ ਕਰਜ਼ਾ ਸਮਝੌਤਾ PDF ਬਣਾਏਗਾ।",
+  "@confirmPayAllMessage": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "installmentLabel": "ਕਿਸਤ #{no}",
+  "@installmentLabel": {
+    "placeholders": {
+      "no": {
+        "type": "int"
+      }
+    }
+  },
+  "paidOnLabel": "ਭੁਗਤਾਨ: {date}",
+  "@paidOnLabel": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "outOfOrderEmiError": "ਕਿਰਪਾ ਕਰਕੇ ਪਹਿਲਾਂ ਪਿਛਲੀਆਂ ਬਕਾਇਆ ਕਿਸਤਾਂ ਕ੍ਰਮ ਵਿੱਚ ਭੁਗਤਾਨ ਕਰੋ।",
+  "emiPaidSuccess": "ਕਿਸਤ #{no} ਦਾ ਭੁਗਤਾਨ ਦਰਜ ਹੋ ਗਿਆ।",
+  "@emiPaidSuccess": {
+    "placeholders": {
+      "no": {
+        "type": "int"
+      }
+    }
+  },
+  "loanCompletedPdfGenerated": "ਕਰਜ਼ਾ ਪੂਰਾ ਹੋਇਆ! ਸਮਝੌਤਾ PDF ਦਸਤਾਵੇਜ਼ਾਂ ਵਿੱਚ ਸੇਵ ਹੋ ਗਈ।",
+  "viewPdfAction": "PDF ਵੇਖੋ",
+  "openDocumentsAction": "ਦਸਤਾਵੇਜ਼ ਖੋਲ੍ਹੋ",
+  "progressPaidLabel": "{total} ਵਿੱਚੋਂ {paid} EMI ਭੁਗਤਾਨ",
+  "@progressPaidLabel": {
+    "placeholders": {
+      "paid": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "ledgerHeading": "ਖਾਤਾ ਇਤਿਹਾਸ",
+  "ledgerDebitLabel": "ਡੈਬਿਟ",
+  "ledgerCreditLabel": "ਕ੍ਰੈਡਿਟ",
+  "ledgerBalanceLabel": "ਬਕਾਇਆ",
+  "documentsTitle": "ਦਸਤਾਵੇਜ਼",
+  "noDocumentsTitle": "ਅਜੇ ਕੋਈ PDF ਦਸਤਾਵੇਜ਼ ਨਹੀਂ",
+  "noDocumentsSubtitle": "ਕਰਜ਼ਾ ਪੂਰਾ ਭੁਗਤਾਨ ਹੋਣ ਤੇ ਸਮਝੌਤਾ ਇੱਥੇ ਦਿਖੇਗਾ।",
+  "viewPdfMenu": "PDF ਵੇਖੋ",
+  "sharePdfMenu": "PDF ਸਾਂਝੀ ਕਰੋ",
+  "deletePdfMenu": "PDF ਹਟਾਓ",
+  "editPdfMenu": "PDF ਸੋਧੋ",
+  "deletePdfConfirmTitle": "ਦਸਤਾਵੇਜ਼ ਹਟਾਓ?",
+  "deletePdfConfirmMessage": "ਇਹ ਬਣੇ ਕਰਜ਼ਾ ਸਮਝੌਤੇ ਨੂੰ ਦਸਤਾਵੇਜ਼ਾਂ ਵਿੱਚੋਂ ਹਟਾ ਦੇਵੇਗਾ।",
+  "pagesCountLabel": "{count} ਪੰਨੇ",
+  "@pagesCountLabel": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "documentViewerTitle": "ਕਰਜ਼ਾ ਸਮਝੌਤਾ ਦਰਸ਼ਕ",
+  "loanAgreementHeadline": "ਕਰਜ਼ਾ ਸਮਝੌਤਾ",
+  "lenderDetailsHeading": "ਕਰਜ਼ਦਾਤਾ ਵੇਰਵੇ",
+  "borrowerDetailsHeading": "ਕਰਜ਼ਦਾਰ ਵੇਰਵੇ",
+  "installmentScheduleHeading": "ਕਿਸਤ ਸਾਰਣੀ",
+  "generatedOnLabel": "ਤਿਆਰ ਮਿਤੀ",
+  "documentIdLabel": "ਦਸਤਾਵੇਜ਼ ID",
+  "pageOfLabel": "ਪੰਨਾ {current} / {total}",
+  "@pageOfLabel": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "signatureLender": "ਕਰਜ਼ਦਾਤਾ ਦੇ ਦਸਤਖਤ",
+  "signatureBorrower": "ਕਰਜ਼ਦਾਰ ਦੇ ਦਸਤਖਤ",
+  "editPdfTitle": "PDF ਸੋਧੋ",
+  "snapshotNotice": "ਬਦਲਾਅ ਸਿਰਫ਼ ਇਸ PDF ਸਨੈਪਸ਼ਾਟ ਨੂੰ ਅੱਪਡੇਟ ਕਰਦੇ ਹਨ, ਅਸਲ ਕਰਜ਼ੇ ਜਾਂ ਖਾਤੇ ਨੂੰ ਨਹੀਂ।",
+  "pdfLanguageLabel": "ਦਸਤਾਵੇਜ਼ ਦੀ ਭਾਸ਼ਾ",
+  "statusTextLabel": "ਸਥਿਤੀ ਟੈਕਸਟ",
+  "previewButton": "ਪ੍ਰੀਵਿਊ",
+  "regeneratePdfButton": "PDF ਦੁਬਾਰਾ ਬਣਾਓ",
+  "pdfRegeneratedSuccess": "ਦਸਤਾਵੇਜ਼ ਸਫਲਤਾਪੂਰਵਕ ਦੁਬਾਰਾ ਬਣਿਆ।",
+  "shareReadyMessage": "ਸਾਂਝਾ ਕਰਨ ਲਈ {title} ({pages} ਪੰਨੇ) ਤਿਆਰ ਹੈ।",
+  "@shareReadyMessage": {
+    "placeholders": {
+      "title": {
+        "type": "String"
+      },
+      "pages": {
+        "type": "int"
+      }
+    }
+  },
+  "copyHtmlAction": "HTML ਕਾਪੀ ਕਰੋ",
+  "htmlCopiedMessage": "A4 HTML ਕਲਿੱਪਬੋਰਡ ਵਿੱਚ ਕਾਪੀ ਹੋਇਆ।",
+  "saveChangesButton": "ਬਦਲਾਅ ਸੰਭਾਲੋ",
+  "profileUpdatedSuccess": "ਪ੍ਰੋਫਾਈਲ ਸਫਲਤਾਪੂਰਵਕ ਅੱਪਡੇਟ ਹੋਈ।",
+  "signOutConfirmTitle": "ਸਾਈਨ ਆਊਟ?",
+  "signOutConfirmMessage": "ਤੁਸੀਂ ਕਿਸੇ ਵੀ ਸਮੇਂ ਆਪਣੇ ਵੇਰਵਿਆਂ ਨਾਲ ਵਾਪਸ ਸਾਈਨ ਇਨ ਕਰ ਸਕਦੇ ਹੋ।",
+  "totalLoansStatLabel": "ਕੁੱਲ ਕਰਜ਼ੇ",
+  "documentsStatLabel": "ਦਸਤਾਵੇਜ਼",
+  "backupTitle": "ਬੈਕਅੱਪ ਅਤੇ ਰੀਸਟੋਰ",
+  "backupSubtitle": "ਲੋਕਲ ਸਨੈਪਸ਼ਾਟ ਐਕਸਪੋਰਟ ਕਰੋ ਜਾਂ ਆਪਣਾ ਖਾਤਾ ਰੀਸਟੋਰ ਕਰੋ।",
+  "exportBackupButton": "ਲੋਕਲ ਬੈਕਅੱਪ ਬਣਾਓ",
+  "restoreBackupButton": "ਸਨੈਪਸ਼ਾਟ ਰੀਸਟੋਰ ਕਰੋ",
+  "backupGeneratedMessage": "ਬੈਕਅੱਪ ਸਨੈਪਸ਼ਾਟ ਕਲਿੱਪਬੋਰਡ ਵਿੱਚ ਕਾਪੀ ਹੋਇਆ।",
+  "restoreSuccessMessage": "ਬੈਕਅੱਪ ਸਨੈਪਸ਼ਾਟ ਸਫਲਤਾਪੂਰਵਕ ਰੀਸਟੋਰ ਹੋਇਆ।",
+  "restoreInvalidError": "ਅਵੈਧ ਬੈਕਅੱਪ ਸਨੈਪਸ਼ਾਟ JSON।",
+  "pasteBackupHint": "ਰੀਸਟੋਰ ਕਰਨ ਲਈ ਬੈਕਅੱਪ JSON ਇੱਥੇ ਪੇਸਟ ਕਰੋ",
+  "driveComingSoonNote": "Google Drive ਐਨਕ੍ਰਿਪਟਡ AppData ਸਿੰਕ ਪੜਾਅ 6 ਵਿੱਚ ਆਵੇਗਾ।",
+  "emiPdfButton": "EMI PDF",
+  "viewCompletePdfButton": "ਪੂਰਾ ਕਰਜ਼ਾ PDF",
+  "emiPdfGeneratedMessage": "ਕਿਸ਼ਤ #{no} ਦਾ ਭੁਗਤਾਨ ਹੋ ਗਿਆ ਅਤੇ PDF ਦਸਤਾਵੇਜ਼ਾਂ ਵਿੱਚ ਸੁਰੱਖਿਅਤ ਹੋ ਗਿਆ।",
+  "emiReceiptTag": "EMI #{no} ਰਸੀਦ",
+  "completeLoanPdfTag": "ਪੂਰਾ ਕਰਜ਼ਾ PDF",
+  "emiCalculatorTitle": "EMI ਕੈਲਕੁਲੇਟਰ",
+  "emiCalculatorSubtitle": "ਕਰਜ਼ਾ ਬਣਾਉਣ ਤੋਂ ਪਹਿਲਾਂ ਮਹੀਨਾਵਾਰ ਕਿਸ਼ਤ, ਕੁੱਲ ਵਿਆਜ ਅਤੇ ਅਦਾਇਗੀ ਸੂਚੀ ਦਾ ਅੰਦਾਜ਼ਾ ਲਗਾਓ।",
+  "principalShareLabel": "ਮੂਲ ਹਿੱਸਾ",
+  "interestShareLabel": "ਵਿਆਜ ਹਿੱਸਾ",
+  "resetFieldsButton": "ਰੀਸੈੱਟ",
+  "proceedToCreateLoanButton": "ਇਹਨਾਂ ਸ਼ਰਤਾਂ ਨਾਲ ਕਰਜ਼ਾ ਬਣਾਓ",
+  "schedulePreviewHeading": "ਸੂਚੀ ਝਲਕ",
+  "enterTermsForEstimate": "EMI ਅੰਦਾਜ਼ਾ ਦੇਖਣ ਲਈ ਮੂਲ ਰਕਮ, ਮਹੀਨਾਵਾਰ ਦਰ ਅਤੇ ਮਿਆਦ ਦਰਜ ਕਰੋ।",
+  "systemDefaultLanguage": "ਸਿਸਟਮ ਡਿਫਾਲਟ",
+  "choosePhotoTitle": "ਪ੍ਰੋਫਾਈਲ ਫੋਟੋ",
+  "pickFromGallery": "ਗੈਲਰੀ ਵਿੱਚੋਂ ਚੁਣੋ",
+  "takePhoto": "ਫੋਟੋ ਖਿੱਚੋ",
+  "removePhoto": "ਫੋਟੋ ਹਟਾਓ",
+  "changeAvatarColor": "ਬੈਜ ਰੰਗ ਬਦਲੋ",
+  "photoPickFailedError": "ਚੁਣੀ ਗਈ ਤਸਵੀਰ ਲੋਡ ਨਹੀਂ ਹੋ ਸਕੀ।",
+  "databaseError": "ਡੇਟਾ ਸਥਾਨਕ ਤੌਰ ਉੱਤੇ ਸੇਵ ਨਹੀਂ ਹੋ ਸਕਿਆ। ਕਿਰਪਾ ਕਰਕੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।",
+  "onboardingSkip": "ਛੱਡੋ",
+  "onboardingStart": "ਸ਼ੁਰੂ ਕਰੋ",
+  "onboardingNext": "ਅੱਗੇ",
+  "onboardingTitle1": "ਸਮਾਰਟ ਕਰਜ਼ਾ ਹੱਬ",
+  "onboardingSubtitle1": "ਗਾਹਕਾਂ ਦਾ ਪ੍ਰਬੰਧ ਕਰੋ, ਸਧਾਰਨ ਜਾਂ ਮਿਸ਼ਰਤ ਵਿਆਜ ਕਰਜ਼ੇ ਬਣਾਓ ਅਤੇ ਆਫਲਾਈਨ ਸੰਗਠਿਤ ਰਹੋ।",
+  "onboardingTitle2": "EMI ਅਤੇ ਖਾਤਾ ਟ੍ਰੈਕ ਕਰੋ",
+  "onboardingSubtitle2": "ਮਹੀਨਾਵਾਰ ਕਿਸ਼ਤਾਂ, ਨਿਯਤ ਮਿਤੀਆਂ ਅਤੇ ਵਸੂਲੀ ਨੂੰ ਇੱਕ ਨਜ਼ਰ ਵਿੱਚ ਦੇਖੋ।",
+  "onboardingTitle3": "ਤੁਰੰਤ ਕਰਜ਼ਾ ਇਕਰਾਰਨਾਮਾ",
+  "onboardingSubtitle3": "ਪੂਰਾ ਭੁਗਤਾਨ ਹੋਣ 'ਤੇ 13 ਭਾਸ਼ਾਵਾਂ ਵਿੱਚ ਆਪਣੇ ਆਪ A4 ਕਰਜ਼ਾ ਇਕਰਾਰਨਾਮਾ PDF ਬਣਾਓ।"
+}

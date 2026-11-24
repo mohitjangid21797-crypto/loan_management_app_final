@@ -1,0 +1,362 @@
+{
+  "@@locale": "en",
+  "appTitle": "LoanWise",
+  "splashTagline": "Smart Lending & EMI Ledger",
+  "loginTitle": "Login",
+  "nameLabel": "Name",
+  "nameHint": "Enter your full name",
+  "mobileLabel": "Mobile number",
+  "mobileHint": "10-digit mobile number",
+  "emailLabel": "Email ID",
+  "emailHint": "name@example.com",
+  "signInButton": "Sign in",
+  "errorNameRequired": "Please enter your name",
+  "errorMobileInvalid": "Enter a 10 digit mobile number starting with 6 to 9",
+  "errorEmailInvalid": "Enter a valid email address",
+  "navHome": "Home",
+  "navCustomers": "Customers",
+  "navLoans": "Loans",
+  "navProfile": "Profile",
+  "welcomeBack": "Welcome back,",
+  "openMenuTooltip": "Open menu",
+  "openProfileTooltip": "Open profile",
+  "totalLentLabel": "Total Lent",
+  "availableToCollect": "Available to collect",
+  "activeLoansLabel": "Active loans",
+  "customersLabel": "Customers",
+  "emisDueThisMonthLabel": "EMIs due this month",
+  "quickActionsHeading": "Quick Actions",
+  "actionAddCustomer": "Add Customer",
+  "actionCreateLoan": "Create Loan",
+  "actionLoans": "Loans",
+  "actionDocuments": "Documents",
+  "actionAllCustomers": "All Customers",
+  "actionProfile": "Profile",
+  "thisMonthHeading": "This Month",
+  "viewAll": "View all",
+  "collectedThisMonth": "Collected this month",
+  "pendingThisMonth": "Pending this month",
+  "recentLoansHeading": "Recent Loans",
+  "overdueEmisHeading": "Overdue EMIs",
+  "statusActive": "Active",
+  "statusCompleted": "Completed",
+  "statusOverdue": "Overdue",
+  "statusPending": "Pending",
+  "statusPaid": "Paid",
+  "nextEmiLabel": "Next EMI: {date}",
+  "@nextEmiLabel": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "dueSinceLabel": "Due: {date}",
+  "@dueSinceLabel": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "emptyRecentLoans": "No recent loans yet. Create a loan to see activity here.",
+  "emptyOverdueEmis": "All caught up. No overdue EMIs at the moment.",
+  "drawerBackupRestore": "Backup and restore",
+  "drawerChangeTheme": "Change theme",
+  "drawerChooseLanguage": "Choose language",
+  "themeLight": "Light",
+  "themeDark": "Dark",
+  "themeSystem": "System",
+  "backupDialogMessage": "Local backup is up to date for your device.",
+  "closeAction": "Close",
+  "featureQueuedMessage": "{feature} is ready.",
+  "@featureQueuedMessage": {
+    "placeholders": {
+      "feature": {
+        "type": "String"
+      }
+    }
+  },
+  "tabCustomersSubtitle": "Manage borrowers, contact details, and active loan records.",
+  "tabLoansSubtitle": "Track active disbursements, interest, and EMI schedules.",
+  "tabProfileSubtitle": "Your registered lender details and workspace preferences.",
+  "signOutAction": "Sign out",
+  "addCustomerTitle": "Add Customer",
+  "editCustomerTitle": "Edit Customer",
+  "customerNameLabel": "Customer name",
+  "customerEmailLabel": "Customer email",
+  "customerMobileLabel": "Mobile number",
+  "customerLocationLabel": "Location",
+  "locationRequiredError": "Please enter a location",
+  "saveCustomerButton": "Save Customer",
+  "updateCustomerButton": "Update Customer",
+  "customerAddedTitle": "Customer added successfully",
+  "customerAddedMessage": "Would you like to create a loan for {name} now?",
+  "@customerAddedMessage": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "laterButton": "Later",
+  "searchCustomersHint": "Search by name or mobile",
+  "noCustomersTitle": "No customers found",
+  "noCustomersSubtitle": "Tap + to add your first borrower.",
+  "editCustomerMenu": "Edit customer details",
+  "deleteCustomerMenu": "Delete customer",
+  "createLoanMenu": "Create loan",
+  "deleteCustomerConfirmTitle": "Delete customer?",
+  "deleteCustomerConfirmMessage": "This will archive {name} from your active customer list.",
+  "@deleteCustomerConfirmMessage": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteAction": "Delete",
+  "cancelAction": "Cancel",
+  "activeLoanDeleteBlocked": "Cannot delete a customer who still has an active loan.",
+  "duplicateMobileError": "A customer with this mobile number already exists.",
+  "customerDetailTitle": "Customer Details",
+  "callAction": "Call",
+  "smsAction": "SMS",
+  "customerLoansHeading": "Customer Loans",
+  "mobileLockedHelper": "Mobile number cannot be changed once loans exist.",
+  "activeLoansCountLabel": "{count} active",
+  "@activeLoansCountLabel": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "createLoanTitle": "Create Loan",
+  "searchCustomerMobileHint": "Enter 10-digit customer mobile",
+  "noCustomerWithMobile": "No customer with this mobile",
+  "addCustomerShortcut": "Add customer",
+  "principalLabel": "Principal amount (₹)",
+  "monthlyRateLabel": "Interest rate (% per month)",
+  "tenureMonthsLabel": "Tenure (months)",
+  "loanTypeLabel": "Interest type",
+  "loanTypeSimple": "Simple",
+  "loanTypeCompound": "Compound",
+  "startDateLabel": "Start date",
+  "livePreviewHeading": "Live EMI Preview",
+  "monthlyEmiLabel": "Monthly EMI",
+  "totalInterestLabel": "Total interest",
+  "totalPayableLabel": "Total payable",
+  "createLoanButton": "Create Loan",
+  "loanCreatedTitle": "Loan created successfully",
+  "loanCreatedMessage": "{count} monthly EMIs have been generated.",
+  "@loanCreatedMessage": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "viewLoanOverview": "Open Loan Overview",
+  "allLoansFilter": "All",
+  "activeLoansFilter": "Active",
+  "completedLoansFilter": "Completed",
+  "noLoansTitle": "No loans yet",
+  "noLoansSubtitle": "Create a loan to generate its EMI schedule.",
+  "selectCustomerError": "Select a customer by 10-digit mobile first.",
+  "invalidPrincipalError": "Enter a principal amount greater than 0.",
+  "invalidRateError": "Enter a monthly rate between 0 and 100.",
+  "invalidTenureError": "Enter a tenure between 1 and 600 months.",
+  "loanOverviewTitle": "Loan Overview",
+  "emiScheduleHeading": "EMI Schedule",
+  "payButton": "Pay",
+  "payAllPendingButton": "Pay all pending EMIs",
+  "confirmPayEmiTitle": "Mark EMI #{no} paid?",
+  "@confirmPayEmiTitle": {
+    "placeholders": {
+      "no": {
+        "type": "int"
+      }
+    }
+  },
+  "confirmPayEmiMessage": "Confirm payment of {amount}.",
+  "@confirmPayEmiMessage": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "paymentDateLabel": "Payment date",
+  "confirmPayAllTitle": "Pay all pending EMIs?",
+  "confirmPayAllMessage": "This will mark {count} remaining EMIs ({amount}) as paid and generate the Loan Agreement PDF.",
+  "@confirmPayAllMessage": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "installmentLabel": "Installment #{no}",
+  "@installmentLabel": {
+    "placeholders": {
+      "no": {
+        "type": "int"
+      }
+    }
+  },
+  "paidOnLabel": "Paid: {date}",
+  "@paidOnLabel": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "outOfOrderEmiError": "Please pay earlier pending installments in order first.",
+  "emiPaidSuccess": "Installment #{no} marked as paid.",
+  "@emiPaidSuccess": {
+    "placeholders": {
+      "no": {
+        "type": "int"
+      }
+    }
+  },
+  "loanCompletedPdfGenerated": "Loan completed! Loan Agreement PDF saved to Documents.",
+  "viewPdfAction": "View PDF",
+  "openDocumentsAction": "Open Documents",
+  "progressPaidLabel": "{paid} of {total} EMIs paid",
+  "@progressPaidLabel": {
+    "placeholders": {
+      "paid": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "ledgerHeading": "Ledger History",
+  "ledgerDebitLabel": "Debit",
+  "ledgerCreditLabel": "Credit",
+  "ledgerBalanceLabel": "Balance",
+  "documentsTitle": "Documents",
+  "noDocumentsTitle": "No PDF documents yet",
+  "noDocumentsSubtitle": "Loan Agreements appear here automatically once a loan is fully paid.",
+  "viewPdfMenu": "View PDF",
+  "sharePdfMenu": "Share PDF",
+  "deletePdfMenu": "Delete PDF",
+  "editPdfMenu": "Edit PDF",
+  "deletePdfConfirmTitle": "Delete document?",
+  "deletePdfConfirmMessage": "This removes the generated Loan Agreement from Documents.",
+  "pagesCountLabel": "{count} pages",
+  "@pagesCountLabel": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "documentViewerTitle": "Loan Agreement Viewer",
+  "loanAgreementHeadline": "Loan Agreement",
+  "lenderDetailsHeading": "Lender Details",
+  "borrowerDetailsHeading": "Borrower Details",
+  "installmentScheduleHeading": "Installment Schedule",
+  "generatedOnLabel": "Generated on",
+  "documentIdLabel": "Document ID",
+  "pageOfLabel": "Page {current} of {total}",
+  "@pageOfLabel": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "signatureLender": "Lender Signature",
+  "signatureBorrower": "Borrower Signature",
+  "editPdfTitle": "Edit PDF",
+  "snapshotNotice": "Changes only update this PDF snapshot and never alter the original loan or ledger.",
+  "pdfLanguageLabel": "Document language",
+  "statusTextLabel": "Status label",
+  "previewButton": "Preview",
+  "regeneratePdfButton": "Regenerate PDF",
+  "pdfRegeneratedSuccess": "Document regenerated successfully.",
+  "shareReadyMessage": "Prepared {title} ({pages} pages) for sharing.",
+  "@shareReadyMessage": {
+    "placeholders": {
+      "title": {
+        "type": "String"
+      },
+      "pages": {
+        "type": "int"
+      }
+    }
+  },
+  "copyHtmlAction": "Copy HTML",
+  "htmlCopiedMessage": "A4 HTML copied to clipboard.",
+  "saveChangesButton": "Save Changes",
+  "profileUpdatedSuccess": "Profile updated successfully.",
+  "signOutConfirmTitle": "Sign out?",
+  "signOutConfirmMessage": "You can sign back in anytime with your lender details.",
+  "totalLoansStatLabel": "Total loans",
+  "documentsStatLabel": "Documents",
+  "backupTitle": "Backup and Restore",
+  "backupSubtitle": "Export an encrypted-ready local snapshot or restore your lending ledger.",
+  "exportBackupButton": "Create Local Backup",
+  "restoreBackupButton": "Restore Snapshot",
+  "backupGeneratedMessage": "Backup snapshot created and copied to clipboard.",
+  "restoreSuccessMessage": "Backup snapshot restored successfully.",
+  "restoreInvalidError": "Invalid backup snapshot JSON.",
+  "pasteBackupHint": "Paste exported backup JSON here to restore",
+  "driveComingSoonNote": "Google Drive encrypted AppData sync is scheduled for Stage 6.",
+  "emiPdfButton": "EMI PDF",
+  "viewCompletePdfButton": "Complete Loan PDF",
+  "emiPdfGeneratedMessage": "Installment #{no} paid and PDF saved to Documents.",
+  "@emiPdfGeneratedMessage": {
+    "placeholders": {
+      "no": {
+        "type": "int"
+      }
+    }
+  },
+  "emiReceiptTag": "EMI #{no} Receipt",
+  "@emiReceiptTag": {
+    "placeholders": {
+      "no": {
+        "type": "int"
+      }
+    }
+  },
+  "completeLoanPdfTag": "Complete Loan PDF",
+  "emiCalculatorTitle": "EMI Calculator",
+  "emiCalculatorSubtitle": "Estimate monthly payments, total interest, and repayment schedule before creating a loan.",
+  "principalShareLabel": "Principal share",
+  "interestShareLabel": "Interest share",
+  "resetFieldsButton": "Reset",
+  "proceedToCreateLoanButton": "Proceed to Create Loan",
+  "schedulePreviewHeading": "Schedule Preview",
+  "enterTermsForEstimate": "Enter principal, monthly rate, and duration to see your EMI estimate.",
+  "systemDefaultLanguage": "System default",
+  "choosePhotoTitle": "Profile photo",
+  "pickFromGallery": "Choose from gallery",
+  "takePhoto": "Take photo",
+  "removePhoto": "Remove photo",
+  "changeAvatarColor": "Change badge color",
+  "photoPickFailedError": "Could not load selected image.",
+  "databaseError": "Could not save data locally. Please try again.",
+  "onboardingSkip": "Skip",
+  "onboardingStart": "Start",
+  "onboardingNext": "Next",
+  "onboardingTitle1": "SMART LENDING HUB",
+  "onboardingSubtitle1": "Manage borrowers, create simple or compound loans, and stay organized offline.",
+  "onboardingTitle2": "TRACK EMIS & LEDGER",
+  "onboardingSubtitle2": "Monitor monthly installments, due dates, and collections at a glance.",
+  "onboardingTitle3": "INSTANT LOAN AGREEMENTS",
+  "onboardingSubtitle3": "Generate A4 Loan Agreements automatically in 13 languages once paid."
+}

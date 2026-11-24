@@ -1,0 +1,348 @@
+{
+  "@@locale": "as",
+  "appTitle": "LoanWise",
+  "splashTagline": "স্মাৰ্ট ঋণ আৰু EMI খাতা",
+  "loginTitle": "লগইন",
+  "nameLabel": "নাম",
+  "nameHint": "আপোনাৰ সম্পূৰ্ণ নাম লিখক",
+  "mobileLabel": "ম’বাইল নম্বৰ",
+  "mobileHint": "১০ টা সংখ্যাৰ ম’বাইল নম্বৰ",
+  "emailLabel": "ইমেইল আইডি",
+  "emailHint": "name@example.com",
+  "signInButton": "ছাইন ইন কৰক",
+  "errorNameRequired": "অনুগ্ৰহ কৰি আপোনাৰ নাম লিখক",
+  "errorMobileInvalid": "৬ ৰ পৰা ৯ ৰে আৰম্ভ হোৱা ১০ টা সংখ্যাৰ ম’বাইল নম্বৰ লিখক",
+  "errorEmailInvalid": "এটা বৈধ ইমেইল ঠিকনা লিখক",
+  "navHome": "হ’ম",
+  "navCustomers": "গ্ৰাহক",
+  "navLoans": "ঋণ",
+  "navProfile": "প্ৰ’ফাইল",
+  "welcomeBack": "পুনৰ স্বাগতম,",
+  "openMenuTooltip": "মেনু খোলক",
+  "openProfileTooltip": "প্ৰ’ফাইল খোলক",
+  "totalLentLabel": "মুঠ প্ৰদান কৰা ঋণ",
+  "availableToCollect": "সংগ্ৰহৰ বাবে উপলব্ধ",
+  "activeLoansLabel": "সক্ৰিয় ঋণ",
+  "customersLabel": "গ্ৰাহক",
+  "emisDueThisMonthLabel": "এই মাহৰ EMI",
+  "quickActionsHeading": "দ্ৰুত কাৰ্য্য",
+  "actionAddCustomer": "গ্ৰাহক যোগ কৰক",
+  "actionCreateLoan": "ঋণ সৃষ্টি কৰক",
+  "actionLoans": "ঋণ",
+  "actionDocuments": "নথিপত্ৰ",
+  "actionAllCustomers": "সকলো গ্ৰাহক",
+  "actionProfile": "প্ৰ’ফাইল",
+  "thisMonthHeading": "এই মাহ",
+  "viewAll": "সকলো চাওক",
+  "collectedThisMonth": "এই মাহত সংগ্ৰহ",
+  "pendingThisMonth": "এই মাহত বাকী",
+  "recentLoansHeading": "শেহতীয়া ঋণ",
+  "overdueEmisHeading": "সময় উকলা EMI",
+  "statusActive": "সক্ৰিয়",
+  "statusCompleted": "সম্পূৰ্ণ",
+  "statusOverdue": "সময় উকলিছে",
+  "statusPending": "বাকী",
+  "statusPaid": "পৰিশোধিত",
+  "nextEmiLabel": "পৰৱৰ্তী EMI: {date}",
+  "@nextEmiLabel": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "dueSinceLabel": "দেয় তাৰিখ: {date}",
+  "@dueSinceLabel": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "emptyRecentLoans": "এতিয়ালৈকে কোনো শেহতীয়া ঋণ নাই। চাবলৈ এটা ঋণ সৃষ্টি কৰক।",
+  "emptyOverdueEmis": "সকলো ঠিক আছে। কোনো সময় উকলা EMI নাই।",
+  "drawerBackupRestore": "বেকআপ আৰু পুনৰুদ্ধাৰ",
+  "drawerChangeTheme": "থিম সলনি কৰক",
+  "drawerChooseLanguage": "ভাষা বাছনি কৰক",
+  "themeLight": "লাইট",
+  "themeDark": "ডাৰ্ক",
+  "themeSystem": "ছিষ্টেম",
+  "backupDialogMessage": "আপোনাৰ ডিভাইচৰ বাবে স্থানীয় বেকআপ আপডেট কৰা হৈছে।",
+  "closeAction": "বন্ধ কৰক",
+  "featureQueuedMessage": "{feature} সাজু।",
+  "@featureQueuedMessage": {
+    "placeholders": {
+      "feature": {
+        "type": "String"
+      }
+    }
+  },
+  "tabCustomersSubtitle": "ঋণগ্ৰহীতা, যোগাযোগৰ তথ্য আৰু সক্ৰিয় ঋণ পৰিচালনা কৰক।",
+  "tabLoansSubtitle": "সক্ৰিয় ঋণ, সূত আৰু EMI সূচী চাওক।",
+  "tabProfileSubtitle": "আপোনাৰ পঞ্জীভুক্ত ঋণদাতা তথ্য আৰু পছন্দ।",
+  "signOutAction": "ছাইন আউট",
+  "addCustomerTitle": "গ্ৰাহক যোগ কৰক",
+  "editCustomerTitle": "গ্ৰাহক সম্পাদনা কৰক",
+  "customerNameLabel": "গ্ৰাহকৰ নাম",
+  "customerEmailLabel": "গ্ৰাহকৰ ইমেইল",
+  "customerMobileLabel": "ম’বাইল নম্বৰ",
+  "customerLocationLabel": "স্থান",
+  "locationRequiredError": "অনুগ্ৰহ কৰি স্থান লিখক",
+  "saveCustomerButton": "গ্ৰাহক সংৰক্ষণ কৰক",
+  "updateCustomerButton": "গ্ৰাহক আপডেট কৰক",
+  "customerAddedTitle": "গ্ৰাহক সফলভাৱে যোগ কৰা হ’ল",
+  "customerAddedMessage": "আপুনি এতিয়া {name}-ৰ বাবে ঋণ সৃষ্টি কৰিব বিচাৰেনেকি?",
+  "@customerAddedMessage": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "laterButton": "পাছত",
+  "searchCustomersHint": "নাম বা ম’বাইলেৰে সন্ধান কৰক",
+  "noCustomersTitle": "কোনো গ্ৰাহক পোৱা নগ’ল",
+  "noCustomersSubtitle": "প্ৰথম গ্ৰাহক যোগ কৰিবলৈ + টিপক।",
+  "editCustomerMenu": "তথ্য সম্পাদনা কৰক",
+  "deleteCustomerMenu": "গ্ৰাহক মচক",
+  "createLoanMenu": "ঋণ সৃষ্টি কৰক",
+  "deleteCustomerConfirmTitle": "গ্ৰাহক মচিবনে?",
+  "deleteCustomerConfirmMessage": "ই {name}-ক আপোনাৰ সক্ৰিয় তালিকাৰ পৰা আঁতৰাব।",
+  "@deleteCustomerConfirmMessage": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteAction": "মচক",
+  "cancelAction": "বাতিল",
+  "activeLoanDeleteBlocked": "সক্ৰিয় ঋণ থকা গ্ৰাহক মচিব নোৱাৰি।",
+  "duplicateMobileError": "এই ম’বাইল নম্বৰৰ গ্ৰাহক ইতিমধ্যে আছে।",
+  "customerDetailTitle": "গ্ৰাহকৰ বিৱৰণ",
+  "callAction": "কল",
+  "smsAction": "SMS",
+  "customerLoansHeading": "গ্ৰাহকৰ ঋণ",
+  "mobileLockedHelper": "ঋণ থাকিলে ম’বাইল নম্বৰ সলনি কৰিব নোৱাৰি।",
+  "activeLoansCountLabel": "{count} সক্ৰিয়",
+  "@activeLoansCountLabel": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "createLoanTitle": "ঋণ সৃষ্টি কৰক",
+  "searchCustomerMobileHint": "১০ সংখ্যাৰ ম’বাইল লিখক",
+  "noCustomerWithMobile": "এই ম’বাইল নম্বৰৰ কোনো গ্ৰাহক নাই",
+  "addCustomerShortcut": "গ্ৰাহক যোগ কৰক",
+  "principalLabel": "মূলধন (₹)",
+  "monthlyRateLabel": "মাহিলী সূতৰ হাৰ (%)",
+  "tenureMonthsLabel": "সময়সীমা (মাহ)",
+  "loanTypeLabel": "সূতৰ প্ৰকাৰ",
+  "loanTypeSimple": "সৰল সূত",
+  "loanTypeCompound": "চক্ৰবৃদ্ধি সূত",
+  "startDateLabel": "আৰম্ভণি তাৰিখ",
+  "livePreviewHeading": "লাইভ EMI পূৰ্বদৰ্শন",
+  "monthlyEmiLabel": "মাহিলী EMI",
+  "totalInterestLabel": "মুঠ সূত",
+  "totalPayableLabel": "মুঠ দেয়",
+  "createLoanButton": "ঋণ সৃষ্টি কৰক",
+  "loanCreatedTitle": "ঋণ সফলভাৱে সৃষ্টি হ’ল",
+  "loanCreatedMessage": "{count} মাহিলী EMI সৃষ্টি কৰা হৈছে।",
+  "@loanCreatedMessage": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "viewLoanOverview": "ঋণৰ সাৰাংশ খোলক",
+  "allLoansFilter": "সকলো",
+  "activeLoansFilter": "সক্ৰিয়",
+  "completedLoansFilter": "সম্পূৰ্ণ",
+  "noLoansTitle": "এতিয়ালৈকে কোনো ঋণ নাই",
+  "noLoansSubtitle": "EMI সূচী বনাবলৈ এটা ঋণ সৃষ্টি কৰক।",
+  "selectCustomerError": "প্ৰথমে ১০ সংখ্যাৰ ম’বাইলেৰে গ্ৰাহক বাছনি কৰক।",
+  "invalidPrincipalError": "০ তকৈ বেছি মূলধন লিখক।",
+  "invalidRateError": "০ ৰ পৰা ১০০ ৰ ভিতৰত মাহিলী হাৰ লিখক।",
+  "invalidTenureError": "১ ৰ পৰা ৬০০ মাহৰ সময়সীমা লিখক।",
+  "loanOverviewTitle": "ঋণৰ সাৰাংশ",
+  "emiScheduleHeading": "EMI সূচী",
+  "payButton": "পৰিশোধ",
+  "payAllPendingButton": "সকলো বাকী EMI পৰিশোধ কৰক",
+  "confirmPayEmiTitle": "EMI #{no} পৰিশোধিত চিহ্নিত কৰিবনে?",
+  "@confirmPayEmiTitle": {
+    "placeholders": {
+      "no": {
+        "type": "int"
+      }
+    }
+  },
+  "confirmPayEmiMessage": "{amount} ৰ পৰিশোধ নিশ্চিত কৰক।",
+  "@confirmPayEmiMessage": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "paymentDateLabel": "পৰিশোধৰ তাৰিখ",
+  "confirmPayAllTitle": "সকলো বাকী EMI পৰিশোধ কৰিবনে?",
+  "confirmPayAllMessage": "ই বাকী {count} টা EMI ({amount}) পৰিশোধ কৰি ঋণ চুক্তি PDF তৈয়াৰ কৰিব।",
+  "@confirmPayAllMessage": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "installmentLabel": "কিস্তি #{no}",
+  "@installmentLabel": {
+    "placeholders": {
+      "no": {
+        "type": "int"
+      }
+    }
+  },
+  "paidOnLabel": "পৰিশোধ: {date}",
+  "@paidOnLabel": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "outOfOrderEmiError": "অনুগ্ৰহ কৰি আগৰ বাকী কিস্তিবোৰ ক্ৰম অনুসৰি পৰিশোধ কৰক।",
+  "emiPaidSuccess": "কিস্তি #{no} পৰিশোধিত হ’ল।",
+  "@emiPaidSuccess": {
+    "placeholders": {
+      "no": {
+        "type": "int"
+      }
+    }
+  },
+  "loanCompletedPdfGenerated": "ঋণ সম্পূৰ্ণ! চুক্তি PDF নথিপত্ৰত সংৰক্ষিত হ’ল।",
+  "viewPdfAction": "PDF চাওক",
+  "openDocumentsAction": "নথিপত্ৰ খোলক",
+  "progressPaidLabel": "{total} ৰ ভিতৰত {paid} EMI পৰিশোধ",
+  "@progressPaidLabel": {
+    "placeholders": {
+      "paid": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "ledgerHeading": "খাতাৰ ইতিহাস",
+  "ledgerDebitLabel": "ডেবিট",
+  "ledgerCreditLabel": "ক্ৰেডিট",
+  "ledgerBalanceLabel": "বাকী",
+  "documentsTitle": "নথিপত্ৰ",
+  "noDocumentsTitle": "এতিয়ালৈকে কোনো PDF নথিপত্ৰ নাই",
+  "noDocumentsSubtitle": "ঋণ সম্পূৰ্ণ পৰিশোধ হ’লে চুক্তি ইয়াত দেখা যাব।",
+  "viewPdfMenu": "PDF চাওক",
+  "sharePdfMenu": "PDF শ্বেয়াৰ কৰক",
+  "deletePdfMenu": "PDF মচক",
+  "editPdfMenu": "PDF সম্পাদনা কৰক",
+  "deletePdfConfirmTitle": "নথিপত্ৰ মচিবনে?",
+  "deletePdfConfirmMessage": "ই নথিপত্ৰৰ পৰা ঋণ চুক্তি আঁতৰাব।",
+  "pagesCountLabel": "{count} পৃষ্ঠা",
+  "@pagesCountLabel": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "documentViewerTitle": "ঋণ চুক্তি দৰ্শক",
+  "loanAgreementHeadline": "ঋণ চুক্তি",
+  "lenderDetailsHeading": "ঋণদাতাৰ বিৱৰণ",
+  "borrowerDetailsHeading": "ঋণগ্ৰহীতাৰ বিৱৰণ",
+  "installmentScheduleHeading": "কিস্তি সূচী",
+  "generatedOnLabel": "তৈয়াৰ কৰা তাৰিখ",
+  "documentIdLabel": "নথিপত্ৰ ID",
+  "pageOfLabel": "পৃষ্ঠা {current} / {total}",
+  "@pageOfLabel": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "signatureLender": "ঋণদাতাৰ স্বাক্ষৰ",
+  "signatureBorrower": "ঋণগ্ৰহীতাৰ স্বাক্ষৰ",
+  "editPdfTitle": "PDF সম্পাদনা",
+  "snapshotNotice": "সলনিয়ে কেৱল এই PDF স্নেপশ্বট আপডেট কৰে; মূল ঋণ বা খাতা সলনি নহয়।",
+  "pdfLanguageLabel": "নথিপত্ৰৰ ভাষা",
+  "statusTextLabel": "স্থিতিৰ লেখা",
+  "previewButton": "পূৰ্বদৰ্শন",
+  "regeneratePdfButton": "PDF পুনৰ সৃষ্টি",
+  "pdfRegeneratedSuccess": "নথিপত্ৰ সফলভাৱে পুনৰ সৃষ্টি হ’ল।",
+  "shareReadyMessage": "শ্বেয়াৰৰ বাবে {title} ({pages} পৃষ্ঠা) সাজু।",
+  "@shareReadyMessage": {
+    "placeholders": {
+      "title": {
+        "type": "String"
+      },
+      "pages": {
+        "type": "int"
+      }
+    }
+  },
+  "copyHtmlAction": "HTML কপি কৰক",
+  "htmlCopiedMessage": "A4 HTML ক্লিপব’ৰ্ডত কপি হ’ল।",
+  "saveChangesButton": "সলনি সংৰক্ষণ কৰক",
+  "profileUpdatedSuccess": "প্ৰ’ফাইল সফলভাৱে আপডেট হ’ল।",
+  "signOutConfirmTitle": "ছাইন আউট?",
+  "signOutConfirmMessage": "আপুনি যিকোনো সময়তে আপোনাৰ তথ্যৰে পুনৰ ছাইন ইন কৰিব পাৰে।",
+  "totalLoansStatLabel": "মুঠ ঋণ",
+  "documentsStatLabel": "নথিপত্ৰ",
+  "backupTitle": "বেকআপ আৰু পুনৰুদ্ধাৰ",
+  "backupSubtitle": "স্থানীয় স্নেপশ্বট এক্সপ’ৰ্ট কৰক বা আপোনাৰ খাতা পুনৰুদ্ধাৰ কৰক।",
+  "exportBackupButton": "স্থানীয় বেকআপ সৃষ্টি",
+  "restoreBackupButton": "স্নেপশ্বট পুনৰুদ্ধাৰ",
+  "backupGeneratedMessage": "বেকআপ স্নেপশ্বট ক্লিপব’ৰ্ডত কপি হ’ল।",
+  "restoreSuccessMessage": "বেকআপ স্নেপশ্বট সফলভাৱে পুনৰুদ্ধাৰ হ’ল।",
+  "restoreInvalidError": "অবৈধ বেকআপ JSON।",
+  "pasteBackupHint": "পুনৰুদ্ধাৰৰ বাবে বেকআপ JSON ইয়াত পেষ্ট কৰক",
+  "driveComingSoonNote": "Google Drive এনক্ৰিপ্টেড AppData ছিঙ্ক পৰ্যায় ৬ ত আহিব।",
+  "emiPdfButton": "EMI PDF",
+  "viewCompletePdfButton": "সম্পূৰ্ণ ঋণ PDF",
+  "emiPdfGeneratedMessage": "কিস্তি #{no} পৰিশোধ কৰা হ'ল আৰু PDF নথিপত্ৰত সংৰক্ষণ কৰা হ'ল।",
+  "emiReceiptTag": "EMI #{no} ৰচিদ",
+  "completeLoanPdfTag": "সম্পূৰ্ণ ঋণ PDF",
+  "emiCalculatorTitle": "EMI কেলকুলেটৰ",
+  "emiCalculatorSubtitle": "ঋণ সৃষ্টি কৰাৰ আগতে মাহেকীয়া কিস্তি, মুঠ সূদ আৰু পৰিশোধ তালিকা অনুমান কৰক।",
+  "principalShareLabel": "মূলধনৰ অংশ",
+  "interestShareLabel": "সূদৰ অংশ",
+  "resetFieldsButton": "ৰিছেট",
+  "proceedToCreateLoanButton": "এই চৰ্তেৰে ঋণ সৃষ্টি কৰক",
+  "schedulePreviewHeading": "তালিকা পূৰ্বলোকন",
+  "enterTermsForEstimate": "EMI অনুমান চাবলৈ মূলধন, মাহেকীয়া হাৰ আৰু ম্যাদ লিখক।",
+  "systemDefaultLanguage": "চিষ্টেম ডিফল্ট",
+  "choosePhotoTitle": "প্ৰফাইল ফটো",
+  "pickFromGallery": "গেলেৰীৰ পৰা বাছনি কৰক",
+  "takePhoto": "ফটো তোলক",
+  "removePhoto": "ফটো আঁতৰাওক",
+  "changeAvatarColor": "বেজৰ ৰং সলনি কৰক",
+  "photoPickFailedError": "নিৰ্বাচিত ছবিখন ল’ড কৰিব পৰা নগ’ল।",
+  "databaseError": "ডাটা স্থানীয়ভাৱে সংৰক্ষণ কৰিব পৰা নগ’ল। অনুগ্ৰহ কৰি পুনৰ চেষ্টা কৰক।",
+  "onboardingSkip": "এৰাই যাওক",
+  "onboardingStart": "আৰম্ভ কৰক",
+  "onboardingNext": "পৰৱৰ্তী",
+  "onboardingTitle1": "স্মাৰ্ট ঋণ হাব",
+  "onboardingSubtitle1": "গ্ৰাহক পৰিচালনা কৰক, সৰল বা চক্ৰবৃদ্ধি ঋণ সৃষ্টি কৰক আৰু অফলাইনত সুশৃংখল থাকক।",
+  "onboardingTitle2": "EMI আৰু খতিয়ান ট্ৰেক কৰক",
+  "onboardingSubtitle2": "মাহিলী কিস্তি, নিৰ্ধাৰিত তাৰিখ আৰু আদায় একে দৃষ্টিতে চাওক।",
+  "onboardingTitle3": "তাৎক্ষণিক ঋণ চুক্তি",
+  "onboardingSubtitle3": "সম্পূৰ্ণ পৰিশোধৰ পাছত ১৩টা ভাষাত স্বয়ংক্ৰিয়ভাৱে A4 ঋণ চুক্তি PDF প্ৰস্তুত কৰক।"
+}

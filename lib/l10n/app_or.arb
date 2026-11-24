@@ -1,0 +1,348 @@
+{
+  "@@locale": "or",
+  "appTitle": "LoanWise",
+  "splashTagline": "ସ୍ମାର୍ଟ ଋଣ ଏବଂ EMI ଖାତା",
+  "loginTitle": "ଲଗଇନ୍",
+  "nameLabel": "ନାମ",
+  "nameHint": "ଆପଣଙ୍କ ସମ୍ପୂର୍ଣ୍ଣ ନାମ ଦିଅନ୍ତୁ",
+  "mobileLabel": "ମୋବାଇଲ୍ ନମ୍ବର",
+  "mobileHint": "10 ଅଙ୍କ ବିଶିଷ୍ଟ ମୋବାଇଲ୍ ନମ୍ବର",
+  "emailLabel": "ଇମେଲ୍ ଆଇଡି",
+  "emailHint": "name@example.com",
+  "signInButton": "ସାଇନ୍ ଇନ୍",
+  "errorNameRequired": "ଦୟାକରି ଆପଣଙ୍କ ନାମ ଦିଅନ୍ତୁ",
+  "errorMobileInvalid": "6 ରୁ 9 ମଧ୍ୟରେ ଆରମ୍ଭ ହେଉଥିବା 10 ଅଙ୍କର ମୋବାଇଲ୍ ନମ୍ବର ଦିଅନ୍ତୁ",
+  "errorEmailInvalid": "ଏକ ବୈଧ ଇମେଲ୍ ଠିକଣା ଦିଅନ୍ତୁ",
+  "navHome": "ହୋମ୍",
+  "navCustomers": "ଗ୍ରାହକ",
+  "navLoans": "ଋଣ",
+  "navProfile": "ପ୍ରୋଫାଇଲ୍",
+  "welcomeBack": "ପୁନଃ ସ୍ୱାଗତ,",
+  "openMenuTooltip": "ମେନୁ ଖୋଲନ୍ତୁ",
+  "openProfileTooltip": "ପ୍ରୋଫାଇଲ୍ ଖୋଲନ୍ତୁ",
+  "totalLentLabel": "ମୋଟ ଦିଆଯାଇଥିବା ଋଣ",
+  "availableToCollect": "ଆଦାୟ ପାଇଁ ବାକି",
+  "activeLoansLabel": "ସକ୍ରିୟ ଋଣ",
+  "customersLabel": "ଗ୍ରାହକ",
+  "emisDueThisMonthLabel": "ଏହି ମାସର EMI",
+  "quickActionsHeading": "ତ୍ୱରିତ କାର୍ଯ୍ୟ",
+  "actionAddCustomer": "ଗ୍ରାହକ ଯୋଡନ୍ତୁ",
+  "actionCreateLoan": "ଋଣ ସୃଷ୍ଟି କରନ୍ତୁ",
+  "actionLoans": "ଋଣ",
+  "actionDocuments": "ଦଲିଲ",
+  "actionAllCustomers": "ସମସ୍ତ ଗ୍ରାହକ",
+  "actionProfile": "ପ୍ରୋଫାଇଲ୍",
+  "thisMonthHeading": "ଏହି ମାସ",
+  "viewAll": "ସବୁ ଦେଖନ୍ତୁ",
+  "collectedThisMonth": "ଏହି ମାସରେ ଆଦାୟ",
+  "pendingThisMonth": "ଏହି ମାସରେ ବାକି",
+  "recentLoansHeading": "ସାମ୍ପ୍ରତିକ ଋଣ",
+  "overdueEmisHeading": "ବାକି ପଡ଼ିଥିବା EMI",
+  "statusActive": "ସକ୍ରିୟ",
+  "statusCompleted": "ସମ୍ପୂର୍ଣ୍ଣ",
+  "statusOverdue": "ଅତିବାହିତ",
+  "statusPending": "ବାକି",
+  "statusPaid": "ପରିଶୋଧିତ",
+  "nextEmiLabel": "ପରବର୍ତ୍ତୀ EMI: {date}",
+  "@nextEmiLabel": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "dueSinceLabel": "ଦେୟ ତାରିଖ: {date}",
+  "@dueSinceLabel": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "emptyRecentLoans": "ଏପର୍ଯ୍ୟନ୍ତ କୌଣସି ସାମ୍ପ୍ରତିକ ଋଣ ନାହିଁ। ଦେଖିବା ପାଇଁ ଏକ ଋଣ ସୃଷ୍ଟି କରନ୍ତୁ।",
+  "emptyOverdueEmis": "ସବୁ ଠିକ୍ ଅଛି। କୌଣସି ବାକି EMI ନାହିଁ।",
+  "drawerBackupRestore": "ବ୍ୟାକଅପ୍ ଏବଂ ପୁନରୁଦ୍ଧାର",
+  "drawerChangeTheme": "ଥିମ୍ ବଦଳାନ୍ତୁ",
+  "drawerChooseLanguage": "ଭାଷା ବାଛନ୍ତୁ",
+  "themeLight": "ଲାଇଟ୍",
+  "themeDark": "ଡାର୍କ",
+  "themeSystem": "ସିଷ୍ଟମ୍",
+  "backupDialogMessage": "ଆପଣଙ୍କ ଡିଭାଇସ୍ ପାଇଁ ଲୋକାଲ୍ ବ୍ୟାକଅପ୍ ଅଦ୍ୟତନ ଅଛି।",
+  "closeAction": "ବନ୍ଦ କରନ୍ତୁ",
+  "featureQueuedMessage": "{feature} ପ୍ରସ୍ତୁତ ଅଛି।",
+  "@featureQueuedMessage": {
+    "placeholders": {
+      "feature": {
+        "type": "String"
+      }
+    }
+  },
+  "tabCustomersSubtitle": "ଋଣଗ୍ରହୀତା, ଯୋଗାଯୋଗ ତଥ୍ୟ ଏବଂ ସକ୍ରିୟ ଋଣ ପରିଚାଳନା କରନ୍ତୁ।",
+  "tabLoansSubtitle": "ସକ୍ରିୟ ଋଣ, ସୁଧ ଏବଂ EMI ସୂଚୀ ଦେଖନ୍ତୁ।",
+  "tabProfileSubtitle": "ଆପଣଙ୍କ ପଞ୍ଜୀକୃତ ଋଣଦାତା ବିବରଣୀ ଏବଂ ପସନ୍ଦ।",
+  "signOutAction": "ସାଇନ୍ ଆଉଟ୍",
+  "addCustomerTitle": "ଗ୍ରାହକ ଯୋଡନ୍ତୁ",
+  "editCustomerTitle": "ଗ୍ରାହକ ସମ୍ପାଦନ କରନ୍ତୁ",
+  "customerNameLabel": "ଗ୍ରାହକଙ୍କ ନାମ",
+  "customerEmailLabel": "ଗ୍ରାହକଙ୍କ ଇମେଲ୍",
+  "customerMobileLabel": "ମୋବାଇଲ୍ ନମ୍ବର",
+  "customerLocationLabel": "ସ୍ଥାନ",
+  "locationRequiredError": "ଦୟାକରି ସ୍ଥାନ ଦିଅନ୍ତୁ",
+  "saveCustomerButton": "ଗ୍ରାହକ ସଞ୍ଚୟ କରନ୍ତୁ",
+  "updateCustomerButton": "ଗ୍ରାହକ ଅଦ୍ୟତନ କରନ୍ତୁ",
+  "customerAddedTitle": "ଗ୍ରାହକ ସଫଳତାର ସହ ଯୋଡାଗଲା",
+  "customerAddedMessage": "ଆପଣ ବର୍ତ୍ତମାନ {name} ପାଇଁ ଏକ ଋଣ ସୃଷ୍ଟି କରିବାକୁ ଚାହୁଁଛନ୍ତି କି?",
+  "@customerAddedMessage": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "laterButton": "ପରେ",
+  "searchCustomersHint": "ନାମ କିମ୍ବା ମୋବାଇଲ୍ ଦ୍ୱାରା ଖୋଜନ୍ତୁ",
+  "noCustomersTitle": "କୌଣସି ଗ୍ରାହକ ମିଳିଲା ନାହିଁ",
+  "noCustomersSubtitle": "ପ୍ରଥମ ଗ୍ରାହକ ଯୋଡିବାକୁ + ଟ୍ୟାପ୍ କରନ୍ତୁ।",
+  "editCustomerMenu": "ତଥ୍ୟ ସମ୍ପାଦନ କରନ୍ତୁ",
+  "deleteCustomerMenu": "ଗ୍ରାହକ ବିଲୋପ କରନ୍ତୁ",
+  "createLoanMenu": "ଋଣ ସୃଷ୍ଟି କରନ୍ତୁ",
+  "deleteCustomerConfirmTitle": "ଗ୍ରାହକ ବିଲୋପ କରିବେ?",
+  "deleteCustomerConfirmMessage": "ଏହା {name} କୁ ସକ୍ରିୟ ତାଲିକାରୁ ହଟାଇ ଦେବ।",
+  "@deleteCustomerConfirmMessage": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteAction": "ବିଲୋପ",
+  "cancelAction": "ବାତିଲ୍",
+  "activeLoanDeleteBlocked": "ସକ୍ରିୟ ଋଣ ଥିବା ଗ୍ରାହକଙ୍କୁ ବିଲୋପ କରାଯାଇପାରିବ ନାହିଁ।",
+  "duplicateMobileError": "ଏହି ମୋବାଇଲ୍ ନମ୍ବରରେ ଏକ ଗ୍ରାହକ ପୂର୍ବରୁ ଅଛନ୍ତି।",
+  "customerDetailTitle": "ଗ୍ରାହକ ବିବରଣୀ",
+  "callAction": "କଲ୍",
+  "smsAction": "SMS",
+  "customerLoansHeading": "ଗ୍ରାହକଙ୍କ ଋଣ",
+  "mobileLockedHelper": "ଋଣ ଥିଲେ ମୋବାଇଲ୍ ନମ୍ବର ବଦଳାଯାଇପାରିବ ନାହିଁ।",
+  "activeLoansCountLabel": "{count} ସକ୍ରିୟ",
+  "@activeLoansCountLabel": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "createLoanTitle": "ଋଣ ସୃଷ୍ଟି କରନ୍ତୁ",
+  "searchCustomerMobileHint": "10 ଅଙ୍କର ମୋବାଇଲ୍ ଦିଅନ୍ତୁ",
+  "noCustomerWithMobile": "ଏହି ମୋବାଇଲ୍ ନମ୍ବରରେ କୌଣସି ଗ୍ରାହକ ନାହାନ୍ତି",
+  "addCustomerShortcut": "ଗ୍ରାହକ ଯୋଡନ୍ତୁ",
+  "principalLabel": "ମୂଳଧନ (₹)",
+  "monthlyRateLabel": "ମାସିକ ସୁଧ ହାର (%)",
+  "tenureMonthsLabel": "ସମୟସୀମା (ମାସ)",
+  "loanTypeLabel": "ସୁଧ ପ୍ରକାର",
+  "loanTypeSimple": "ସରଳ ସୁଧ",
+  "loanTypeCompound": "ଚକ୍ରବୃଦ୍ଧି ସୁଧ",
+  "startDateLabel": "ଆରମ୍ଭ ତାରିଖ",
+  "livePreviewHeading": "ଲାଇଭ୍ EMI ପ୍ରିଭ୍ୟୁ",
+  "monthlyEmiLabel": "ମାସିକ EMI",
+  "totalInterestLabel": "ମୋଟ ସୁଧ",
+  "totalPayableLabel": "ମୋଟ ଦେୟ",
+  "createLoanButton": "ଋଣ ସୃଷ୍ଟି କରନ୍ତୁ",
+  "loanCreatedTitle": "ଋଣ ସଫଳତାର ସହ ସୃଷ୍ଟି ହେଲା",
+  "loanCreatedMessage": "{count} ମାସିକ EMI ସୃଷ୍ଟି କରାଯାଇଛି।",
+  "@loanCreatedMessage": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "viewLoanOverview": "ଋଣ ସାରାଂଶ ଖୋଲନ୍ତୁ",
+  "allLoansFilter": "ସମସ୍ତ",
+  "activeLoansFilter": "ସକ୍ରିୟ",
+  "completedLoansFilter": "ସମ୍ପୂର୍ଣ୍ଣ",
+  "noLoansTitle": "ଏପର୍ଯ୍ୟନ୍ତ କୌଣସି ଋଣ ନାହିଁ",
+  "noLoansSubtitle": "EMI ସୂଚୀ ପାଇଁ ଏକ ଋଣ ସୃଷ୍ଟି କରନ୍ତୁ।",
+  "selectCustomerError": "ପ୍ରଥମେ 10 ଅଙ୍କର ମୋବାଇଲ୍ ଦ୍ୱାରା ଗ୍ରାହକ ବାଛନ୍ତୁ।",
+  "invalidPrincipalError": "0 ରୁ ଅଧିକ ମୂଳଧନ ଦିଅନ୍ତୁ।",
+  "invalidRateError": "0 ରୁ 100 ମଧ୍ୟରେ ମାସିକ ହାର ଦିଅନ୍ତୁ।",
+  "invalidTenureError": "1 ରୁ 600 ମାସ ମଧ୍ୟରେ ସମୟ ଦିଅନ୍ତୁ।",
+  "loanOverviewTitle": "ଋଣ ସାରାଂଶ",
+  "emiScheduleHeading": "EMI ସୂଚୀ",
+  "payButton": "ପରିଶୋଧ",
+  "payAllPendingButton": "ସମସ୍ତ ବାକି EMI ପରିଶୋଧ କରନ୍ତୁ",
+  "confirmPayEmiTitle": "EMI #{no} ପରିଶୋଧିତ ଚିହ୍ନିତ କରିବେ?",
+  "@confirmPayEmiTitle": {
+    "placeholders": {
+      "no": {
+        "type": "int"
+      }
+    }
+  },
+  "confirmPayEmiMessage": "{amount} ର ପରିଶୋଧ ନିଶ୍ଚିତ କରନ୍ତୁ।",
+  "@confirmPayEmiMessage": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "paymentDateLabel": "ପରିଶୋଧ ତାରିଖ",
+  "confirmPayAllTitle": "ସମସ୍ତ ବାକି EMI ପରିଶୋଧ କରିବେ?",
+  "confirmPayAllMessage": "ଏହା {count} ବାକି EMI ({amount}) ପରିଶୋଧ କରି ଋଣ ଚୁକ୍ତି PDF ସୃଷ୍ଟି କରିବ।",
+  "@confirmPayAllMessage": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "installmentLabel": "କିସ୍ତି #{no}",
+  "@installmentLabel": {
+    "placeholders": {
+      "no": {
+        "type": "int"
+      }
+    }
+  },
+  "paidOnLabel": "ପରିଶୋଧ: {date}",
+  "@paidOnLabel": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "outOfOrderEmiError": "ଦୟାକରି ପ୍ରଥମେ ପୂର୍ବ ବାକି କିସ୍ତି କ୍ରମରେ ପରିଶୋଧ କରନ୍ତୁ।",
+  "emiPaidSuccess": "କିସ୍ତି #{no} ପରିଶୋଧିତ ହେଲା।",
+  "@emiPaidSuccess": {
+    "placeholders": {
+      "no": {
+        "type": "int"
+      }
+    }
+  },
+  "loanCompletedPdfGenerated": "ଋଣ ସମ୍ପୂର୍ଣ୍ଣ ହେଲା! ଚୁକ୍ତି PDF ଦଲିଲରେ ସଞ୍ଚୟ ହେଲା।",
+  "viewPdfAction": "PDF ଦେଖନ୍ତୁ",
+  "openDocumentsAction": "ଦଲିଲ ଖୋଲନ୍ତୁ",
+  "progressPaidLabel": "{total} ରୁ {paid} EMI ପରିଶୋଧ",
+  "@progressPaidLabel": {
+    "placeholders": {
+      "paid": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "ledgerHeading": "ଖାତା ଇତିହାସ",
+  "ledgerDebitLabel": "ଡେବିଟ୍",
+  "ledgerCreditLabel": "କ୍ରେଡିଟ୍",
+  "ledgerBalanceLabel": "ବାକି",
+  "documentsTitle": "ଦଲିଲ",
+  "noDocumentsTitle": "ଏପର୍ଯ୍ୟନ୍ତ କୌଣସି PDF ଦଲିଲ ନାହିଁ",
+  "noDocumentsSubtitle": "ଋଣ ସମ୍ପୂର୍ଣ୍ଣ ପରିଶୋଧ ହେଲେ ଚୁକ୍ତି ଏଠାରେ ଦେଖାଯିବ।",
+  "viewPdfMenu": "PDF ଦେଖନ୍ତୁ",
+  "sharePdfMenu": "PDF ସେୟାର କରନ୍ତୁ",
+  "deletePdfMenu": "PDF ବିଲୋପ କରନ୍ତୁ",
+  "editPdfMenu": "PDF ସମ୍ପାଦନ କରନ୍ତୁ",
+  "deletePdfConfirmTitle": "ଦଲିଲ ବିଲୋପ କରିବେ?",
+  "deletePdfConfirmMessage": "ଏହା ଦଲିଲରୁ ଋଣ ଚୁକ୍ତିକୁ ହଟାଇ ଦେବ।",
+  "pagesCountLabel": "{count} ପୃଷ୍ଠା",
+  "@pagesCountLabel": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "documentViewerTitle": "ଋଣ ଚୁକ୍ତି ଦର୍ଶକ",
+  "loanAgreementHeadline": "ଋଣ ଚୁକ୍ତି",
+  "lenderDetailsHeading": "ଋଣଦାତା ବିବରଣୀ",
+  "borrowerDetailsHeading": "ଋଣଗ୍ରହୀତା ବିବରଣୀ",
+  "installmentScheduleHeading": "କିସ୍ତି ସୂଚୀ",
+  "generatedOnLabel": "ପ୍ରସ୍ତୁତ ତାରିଖ",
+  "documentIdLabel": "ଦଲିଲ ID",
+  "pageOfLabel": "ପୃଷ୍ଠା {current} / {total}",
+  "@pageOfLabel": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "signatureLender": "ଋଣଦାତାଙ୍କ ସ୍ୱାକ୍ଷର",
+  "signatureBorrower": "ଋଣଗ୍ରହୀତାଙ୍କ ସ୍ୱାକ୍ଷର",
+  "editPdfTitle": "PDF ସମ୍ପାଦନ",
+  "snapshotNotice": "ପରିବର୍ତ୍ତନ କେବଳ ଏହି PDF ସ୍ନାପସଟ୍ କୁ ଅଦ୍ୟତନ କରେ; ମୂଳ ଋଣ କିମ୍ବା ଖାତା ବଦଳେ ନାହିଁ।",
+  "pdfLanguageLabel": "ଦଲିଲର ଭାଷା",
+  "statusTextLabel": "ସ୍ଥିତି ଲେଖା",
+  "previewButton": "ପ୍ରିଭ୍ୟୁ",
+  "regeneratePdfButton": "PDF ପୁନଃ ସୃଷ୍ଟି",
+  "pdfRegeneratedSuccess": "ଦଲିଲ ସଫଳତାର ସହ ପୁନଃ ସୃଷ୍ଟି ହେଲା।",
+  "shareReadyMessage": "ସେୟାର ପାଇଁ {title} ({pages} ପୃଷ୍ଠା) ପ୍ରସ୍ତୁତ।",
+  "@shareReadyMessage": {
+    "placeholders": {
+      "title": {
+        "type": "String"
+      },
+      "pages": {
+        "type": "int"
+      }
+    }
+  },
+  "copyHtmlAction": "HTML କପି କରନ୍ତୁ",
+  "htmlCopiedMessage": "A4 HTML କ୍ଲିପ୍‌ବୋର୍ଡକୁ କପି ହେଲା।",
+  "saveChangesButton": "ପରିବର୍ତ୍ତନ ସଞ୍ଚୟ",
+  "profileUpdatedSuccess": "ପ୍ରୋଫାଇଲ୍ ସଫଳତାର ସହ ଅଦ୍ୟତନ ହେଲା।",
+  "signOutConfirmTitle": "ସାଇନ୍ ଆଉଟ୍?",
+  "signOutConfirmMessage": "ଆପଣ ଯେକୌଣସି ସମୟରେ ପୁଣି ସାଇନ୍ ଇନ୍ କରିପାରିବେ।",
+  "totalLoansStatLabel": "ମୋଟ ଋଣ",
+  "documentsStatLabel": "ଦଲିଲ",
+  "backupTitle": "ବ୍ୟାକଅପ୍ ଏବଂ ପୁନରୁଦ୍ଧାର",
+  "backupSubtitle": "ଲୋକାଲ୍ ସ୍ନାପସଟ୍ ଏକ୍ସପୋର୍ଟ କରନ୍ତୁ କିମ୍ବା ଖାତା ପୁନରୁଦ୍ଧାର କରନ୍ତୁ।",
+  "exportBackupButton": "ଲୋକାଲ୍ ବ୍ୟାକଅପ୍ ସୃଷ୍ଟି",
+  "restoreBackupButton": "ସ୍ନାପସଟ୍ ପୁନରୁଦ୍ଧାର",
+  "backupGeneratedMessage": "ବ୍ୟାକଅପ୍ ସ୍ନାପସଟ୍ କ୍ଲିପ୍‌ବୋର୍ଡକୁ କପି ହେଲା।",
+  "restoreSuccessMessage": "ବ୍ୟାକଅପ୍ ସ୍ନାପସଟ୍ ସଫଳତାର ସହ ପୁନରୁଦ୍ଧାର ହେଲା।",
+  "restoreInvalidError": "ଅବୈଧ ବ୍ୟାକଅପ୍ JSON।",
+  "pasteBackupHint": "ପୁନରୁଦ୍ଧାର ପାଇଁ ବ୍ୟାକଅପ୍ JSON ଏଠାରେ ପେଷ୍ଟ କରନ୍ତୁ",
+  "driveComingSoonNote": "Google Drive ଏନକ୍ରିପ୍ଟେଡ୍ AppData ସିଙ୍କ୍ ପର୍ଯ୍ୟାୟ 6 ରେ ଆସିବ।",
+  "emiPdfButton": "EMI PDF",
+  "viewCompletePdfButton": "ସମ୍ପୂର୍ଣ୍ଣ ଋଣ PDF",
+  "emiPdfGeneratedMessage": "କିସ୍ତି #{no} ପଇଠ ହୋଇଛି ଏବଂ PDF ଡକ୍ୟୁମେଣ୍ଟରେ ସଂରକ୍ଷିତ ହୋଇଛି।",
+  "emiReceiptTag": "EMI #{no} ରସିଦ",
+  "completeLoanPdfTag": "ସମ୍ପୂର୍ଣ୍ଣ ଋଣ PDF",
+  "emiCalculatorTitle": "EMI କାଲକୁଲେଟର",
+  "emiCalculatorSubtitle": "ଋଣ ସୃଷ୍ଟି କରିବା ପୂର୍ବରୁ ମାସିକ କିସ୍ତି, ମୋଟ ସୁଧ ଏବଂ ପରିଶୋଧ ତାଲିକା ଆକଳନ କରନ୍ତୁ।",
+  "principalShareLabel": "ମୂଳଧନ ଅଂଶ",
+  "interestShareLabel": "ସୁଧ ଅଂଶ",
+  "resetFieldsButton": "ରିସେଟ୍",
+  "proceedToCreateLoanButton": "ଏହି ସର୍ତ୍ତରେ ଋଣ ସୃଷ୍ଟି କରନ୍ତୁ",
+  "schedulePreviewHeading": "ତାଲିକା ପୂର୍ବାବଲୋକନ",
+  "enterTermsForEstimate": "EMI ଆକଳନ ଦେଖିବାକୁ ମୂଳଧନ, ମାସିକ ହାର ଏବଂ ଅବଧି ଦିଅନ୍ତୁ।",
+  "systemDefaultLanguage": "ସିଷ୍ଟମ୍ ଡିଫଲ୍ଟ",
+  "choosePhotoTitle": "ପ୍ରୋଫାଇଲ୍ ଫଟୋ",
+  "pickFromGallery": "ଗ୍ୟାଲେରୀରୁ ବାଛନ୍ତୁ",
+  "takePhoto": "ଫଟୋ ଉଠାନ୍ତୁ",
+  "removePhoto": "ଫଟୋ ହଟାନ୍ତୁ",
+  "changeAvatarColor": "ବ୍ୟାଜ୍ ରଙ୍ଗ ବଦଳାନ୍ତୁ",
+  "photoPickFailedError": "ବଛାଯାଇଥିବା ଛବି ଲୋଡ୍ ହୋଇପାରିଲା ନାହିଁ।",
+  "databaseError": "ତଥ୍ୟ ସ୍ଥାନୀୟ ଭାବେ ସଞ୍ଚୟ ହୋଇପାରିଲା ନାହିଁ। ଦୟାକରି ପୁଣି ଚେଷ୍ଟା କରନ୍ତୁ।",
+  "onboardingSkip": "ଛାଡ଼ନ୍ତୁ",
+  "onboardingStart": "ଆରମ୍ଭ କରନ୍ତୁ",
+  "onboardingNext": "ପରବର୍ତ୍ତୀ",
+  "onboardingTitle1": "ସ୍ମାର୍ଟ ଋଣ ହବ୍",
+  "onboardingSubtitle1": "ଗ୍ରାହକଙ୍କୁ ପରିଚାଳନା କରନ୍ତୁ, ସରଳ କିମ୍ବା ଚକ୍ରବୃଦ୍ଧି ଋଣ ତିଆରି କରନ୍ତୁ ଏବଂ ଅଫଲାଇନରେ ସୁବ୍ୟବସ୍ଥିତ ରୁହନ୍ତୁ।",
+  "onboardingTitle2": "EMI ଓ ଖାତା ଟ୍ରାକ୍",
+  "onboardingSubtitle2": "ମାସିକ କିସ୍ତି, ଦେୟ ତାରିଖ ଏବଂ ଆଦାୟକୁ ଗୋଟିଏ ନଜରରେ ଦେଖନ୍ତୁ।",
+  "onboardingTitle3": "ତୁରନ୍ତ ଋଣ ଚୁକ୍ତିନାମା",
+  "onboardingSubtitle3": "ସମ୍ପୂର୍ଣ୍ଣ ପଇଠ ପରେ 13ଟି ଭାଷାରେ ସ୍ୱୟଂଚାଳିତ A4 ଋଣ ଚୁକ୍ତି PDF ପ୍ରସ୍ତୁତ କରନ୍ତୁ।"
+}

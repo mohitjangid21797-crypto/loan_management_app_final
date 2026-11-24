@@ -1,0 +1,348 @@
+{
+  "@@locale": "ur",
+  "appTitle": "LoanWise",
+  "splashTagline": "سمارٹ قرض اور ای ایم آئی کھاتہ",
+  "loginTitle": "لاگ ان",
+  "nameLabel": "نام",
+  "nameHint": "اپنا پورا نام درج کریں",
+  "mobileLabel": "موبائل نمبر",
+  "mobileHint": "10 ہندسوں کا موبائل نمبر",
+  "emailLabel": "ای میل آئی ڈی",
+  "emailHint": "name@example.com",
+  "signInButton": "سائن ان کریں",
+  "errorNameRequired": "براہ کرم اپنا نام درج کریں",
+  "errorMobileInvalid": "6 سے 9 سے شروع ہونے والا 10 ہندسوں کا موبائل نمبر درج کریں",
+  "errorEmailInvalid": "درست ای میل پتہ درج کریں",
+  "navHome": "ہوم",
+  "navCustomers": "گاہک",
+  "navLoans": "قرضے",
+  "navProfile": "پروفائل",
+  "welcomeBack": "خوش آمدید،",
+  "openMenuTooltip": "مینو کھولیں",
+  "openProfileTooltip": "پروفائل کھولیں",
+  "totalLentLabel": "کل دیا گیا قرض",
+  "availableToCollect": "وصولی کے لیے باقی",
+  "activeLoansLabel": "فعال قرضے",
+  "customersLabel": "گاہک",
+  "emisDueThisMonthLabel": "اس ماہ کی ای ایم آئی",
+  "quickActionsHeading": "فوری کارروائیاں",
+  "actionAddCustomer": "گاہک شامل کریں",
+  "actionCreateLoan": "قرض بنائیں",
+  "actionLoans": "قرضے",
+  "actionDocuments": "دستاویزات",
+  "actionAllCustomers": "تمام گاہک",
+  "actionProfile": "پروفائل",
+  "thisMonthHeading": "اس ماہ",
+  "viewAll": "سب دیکھیں",
+  "collectedThisMonth": "اس ماہ وصول ہوا",
+  "pendingThisMonth": "اس ماہ باقی",
+  "recentLoansHeading": "حالیہ قرضے",
+  "overdueEmisHeading": "تاخیر شدہ ای ایم آئی",
+  "statusActive": "فعال",
+  "statusCompleted": "مکمل",
+  "statusOverdue": "تاخیر شدہ",
+  "statusPending": "زیر التوا",
+  "statusPaid": "ادا شدہ",
+  "nextEmiLabel": "اگلی ای ایم آئی: {date}",
+  "@nextEmiLabel": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "dueSinceLabel": "مقررہ تاریخ: {date}",
+  "@dueSinceLabel": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "emptyRecentLoans": "ابھی کوئی حالیہ قرض نہیں ہے۔ یہاں دیکھنے کے لیے قرض بنائیں۔",
+  "emptyOverdueEmis": "سب مکمل ہے۔ کوئی تاخیر شدہ ای ایم آئی نہیں ہے۔",
+  "drawerBackupRestore": "بیک اپ اور بحالی",
+  "drawerChangeTheme": "تھیم تبدیل کریں",
+  "drawerChooseLanguage": "زبان منتخب کریں",
+  "themeLight": "لائٹ",
+  "themeDark": "ڈارک",
+  "themeSystem": "سسٹم",
+  "backupDialogMessage": "آپ کے آلے کے لیے مقامی بیک اپ اپ ڈیٹ ہے۔",
+  "closeAction": "بند کریں",
+  "featureQueuedMessage": "{feature} تیار ہے۔",
+  "@featureQueuedMessage": {
+    "placeholders": {
+      "feature": {
+        "type": "String"
+      }
+    }
+  },
+  "tabCustomersSubtitle": "قرض لینے والوں، رابطے کی تفصیلات اور فعال قرضوں کا انتظام کریں۔",
+  "tabLoansSubtitle": "فعال قرضے، سود اور ای ایم آئی شیڈول دیکھیں۔",
+  "tabProfileSubtitle": "آپ کی رجسٹرڈ قرض دہندہ تفصیلات اور ترجیحات۔",
+  "signOutAction": "سائن آؤٹ",
+  "addCustomerTitle": "گاہک شامل کریں",
+  "editCustomerTitle": "گاہک میں ترمیم کریں",
+  "customerNameLabel": "گاہک کا نام",
+  "customerEmailLabel": "گاہک کا ای میل",
+  "customerMobileLabel": "موبائل نمبر",
+  "customerLocationLabel": "مقام",
+  "locationRequiredError": "براہ کرم مقام درج کریں",
+  "saveCustomerButton": "گاہک محفوظ کریں",
+  "updateCustomerButton": "گاہک اپ ڈیٹ کریں",
+  "customerAddedTitle": "گاہک کامیابی سے شامل ہو گیا",
+  "customerAddedMessage": "کیا آپ ابھی {name} کے لیے قرض بنانا چاہتے ہیں؟",
+  "@customerAddedMessage": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "laterButton": "بعد میں",
+  "searchCustomersHint": "نام یا موبائل سے تلاش کریں",
+  "noCustomersTitle": "کوئی گاہک نہیں ملا",
+  "noCustomersSubtitle": "پہلا گاہک شامل کرنے کے لیے + دبائیں۔",
+  "editCustomerMenu": "تفصیلات میں ترمیم",
+  "deleteCustomerMenu": "گاہک حذف کریں",
+  "createLoanMenu": "قرض بنائیں",
+  "deleteCustomerConfirmTitle": "گاہک حذف کریں؟",
+  "deleteCustomerConfirmMessage": "یہ {name} کو فعال گاہکوں کی فہرست سے ہٹا دے گا۔",
+  "@deleteCustomerConfirmMessage": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteAction": "حذف کریں",
+  "cancelAction": "منسوخ کریں",
+  "activeLoanDeleteBlocked": "فعال قرض رکھنے والے گاہک کو حذف نہیں کیا جا سکتا۔",
+  "duplicateMobileError": "اس موبائل نمبر والا گاہک پہلے سے موجود ہے۔",
+  "customerDetailTitle": "گاہک کی تفصیلات",
+  "callAction": "کال",
+  "smsAction": "ایس ایم ایس",
+  "customerLoansHeading": "گاہک کے قرضے",
+  "mobileLockedHelper": "قرض موجود ہونے پر موبائل نمبر تبدیل نہیں کیا جا سکتا۔",
+  "activeLoansCountLabel": "{count} فعال",
+  "@activeLoansCountLabel": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "createLoanTitle": "قرض بنائیں",
+  "searchCustomerMobileHint": "10 ہندسوں کا موبائل نمبر درج کریں",
+  "noCustomerWithMobile": "اس موبائل نمبر پر کوئی گاہک نہیں ہے",
+  "addCustomerShortcut": "گاہک شامل کریں",
+  "principalLabel": "اصل رقم (₹)",
+  "monthlyRateLabel": "ماہانہ شرح سود (%)",
+  "tenureMonthsLabel": "مدت (ماہ)",
+  "loanTypeLabel": "سود کی قسم",
+  "loanTypeSimple": "سادہ سود",
+  "loanTypeCompound": "مرکب سود",
+  "startDateLabel": "شروع کی تاریخ",
+  "livePreviewHeading": "لائیو ای ایم آئی پیش نظارہ",
+  "monthlyEmiLabel": "ماہانہ ای ایم آئی",
+  "totalInterestLabel": "کل سود",
+  "totalPayableLabel": "کل قابل ادائیگی",
+  "createLoanButton": "قرض بنائیں",
+  "loanCreatedTitle": "قرض کامیابی سے بن گیا",
+  "loanCreatedMessage": "{count} ماہانہ اقساط تیار کر دی گئی ہیں۔",
+  "@loanCreatedMessage": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "viewLoanOverview": "قرض کا خلاصہ کھولیں",
+  "allLoansFilter": "تمام",
+  "activeLoansFilter": "فعال",
+  "completedLoansFilter": "مکمل",
+  "noLoansTitle": "ابھی کوئی قرض نہیں",
+  "noLoansSubtitle": "ای ایم آئی شیڈول بنانے کے لیے قرض بنائیں۔",
+  "selectCustomerError": "پہلے 10 ہندسوں کے موبائل سے گاہک منتخب کریں۔",
+  "invalidPrincipalError": "0 سے زیادہ اصل رقم درج کریں۔",
+  "invalidRateError": "0 سے 100 کے درمیان ماہانہ شرح درج کریں۔",
+  "invalidTenureError": "1 سے 600 ماہ کی مدت درج کریں۔",
+  "loanOverviewTitle": "قرض کا خلاصہ",
+  "emiScheduleHeading": "ای ایم آئی شیڈول",
+  "payButton": "ادا کریں",
+  "payAllPendingButton": "تمام زیر التوا ای ایم آئی ادا کریں",
+  "confirmPayEmiTitle": "ای ایم آئی #{no} ادا شدہ نشان زد کریں؟",
+  "@confirmPayEmiTitle": {
+    "placeholders": {
+      "no": {
+        "type": "int"
+      }
+    }
+  },
+  "confirmPayEmiMessage": "{amount} کی ادائیگی کی تصدیق کریں۔",
+  "@confirmPayEmiMessage": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "paymentDateLabel": "ادائیگی کی تاریخ",
+  "confirmPayAllTitle": "تمام زیر التوا ای ایم آئی ادا کریں؟",
+  "confirmPayAllMessage": "یہ باقی {count} اقساط ({amount}) ادا کر کے قرض معاہدہ پی ڈی ایف بنائے گا۔",
+  "@confirmPayAllMessage": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "installmentLabel": "قسط #{no}",
+  "@installmentLabel": {
+    "placeholders": {
+      "no": {
+        "type": "int"
+      }
+    }
+  },
+  "paidOnLabel": "ادائیگی: {date}",
+  "@paidOnLabel": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "outOfOrderEmiError": "براہ کرم پہلے پچھلی زیر التوا اقساط ترتیب سے ادا کریں۔",
+  "emiPaidSuccess": "قسط #{no} ادا شدہ نشان زد ہو گئی۔",
+  "@emiPaidSuccess": {
+    "placeholders": {
+      "no": {
+        "type": "int"
+      }
+    }
+  },
+  "loanCompletedPdfGenerated": "قرض مکمل! معاہدہ پی ڈی ایف دستاویزات میں محفوظ ہو گیا۔",
+  "viewPdfAction": "پی ڈی ایف دیکھیں",
+  "openDocumentsAction": "دستاویزات کھولیں",
+  "progressPaidLabel": "{total} میں سے {paid} ای ایم آئی ادا",
+  "@progressPaidLabel": {
+    "placeholders": {
+      "paid": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "ledgerHeading": "کھاتہ ہسٹری",
+  "ledgerDebitLabel": "ڈیبٹ",
+  "ledgerCreditLabel": "کریڈٹ",
+  "ledgerBalanceLabel": "بقیہ",
+  "documentsTitle": "دستاویزات",
+  "noDocumentsTitle": "ابھی کوئی پی ڈی ایف دستاویز نہیں",
+  "noDocumentsSubtitle": "قرض مکمل ادا ہونے پر معاہدہ خودکار طور پر یہاں آئے گا۔",
+  "viewPdfMenu": "پی ڈی ایف دیکھیں",
+  "sharePdfMenu": "پی ڈی ایف شیئر کریں",
+  "deletePdfMenu": "پی ڈی ایف حذف کریں",
+  "editPdfMenu": "پی ڈی ایف میں ترمیم",
+  "deletePdfConfirmTitle": "دستاویز حذف کریں؟",
+  "deletePdfConfirmMessage": "یہ تیار کردہ قرض معاہدہ دستاویزات سے ہٹا دے گا۔",
+  "pagesCountLabel": "{count} صفحات",
+  "@pagesCountLabel": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "documentViewerTitle": "قرض معاہدہ ناظر",
+  "loanAgreementHeadline": "قرض کا معاہدہ",
+  "lenderDetailsHeading": "قرض دہندہ کی تفصیلات",
+  "borrowerDetailsHeading": "قرض دار کی تفصیلات",
+  "installmentScheduleHeading": "اقساط کا شیڈول",
+  "generatedOnLabel": "تیاری کی تاریخ",
+  "documentIdLabel": "دستاویز آئی ڈی",
+  "pageOfLabel": "صفحہ {current} از {total}",
+  "@pageOfLabel": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "signatureLender": "قرض دہندہ کے دستخط",
+  "signatureBorrower": "قرض دار کے دستخط",
+  "editPdfTitle": "پی ڈی ایف میں ترمیم",
+  "snapshotNotice": "تبدیلیاں صرف اس پی ڈی ایف اسنیپ شاٹ کو اپ ڈیٹ کرتی ہیں؛ اصل قرض یا کھاتہ نہیں بدلتا۔",
+  "pdfLanguageLabel": "دستاویز کی زبان",
+  "statusTextLabel": "حالت کا متن",
+  "previewButton": "پیش نظارہ",
+  "regeneratePdfButton": "پی ڈی ایف دوبارہ بنائیں",
+  "pdfRegeneratedSuccess": "دستاویز کامیابی سے دوبارہ بن گئی۔",
+  "shareReadyMessage": "شیئر کرنے کے لیے {title} ({pages} صفحات) تیار ہے۔",
+  "@shareReadyMessage": {
+    "placeholders": {
+      "title": {
+        "type": "String"
+      },
+      "pages": {
+        "type": "int"
+      }
+    }
+  },
+  "copyHtmlAction": "HTML کاپی کریں",
+  "htmlCopiedMessage": "A4 HTML کلپ بورڈ میں کاپی ہو گیا۔",
+  "saveChangesButton": "تبدیلیاں محفوظ کریں",
+  "profileUpdatedSuccess": "پروفائل کامیابی سے اپ ڈیٹ ہو گئی۔",
+  "signOutConfirmTitle": "سائن آؤٹ؟",
+  "signOutConfirmMessage": "آپ کسی بھی وقت اپنی تفصیلات سے دوبارہ سائن ان کر سکتے ہیں۔",
+  "totalLoansStatLabel": "کل قرضے",
+  "documentsStatLabel": "دستاویزات",
+  "backupTitle": "بیک اپ اور بحالی",
+  "backupSubtitle": "مقامی اسنیپ شاٹ ایکسپورٹ کریں یا اپنا کھاتہ بحال کریں۔",
+  "exportBackupButton": "مقامی بیک اپ بنائیں",
+  "restoreBackupButton": "اسنیپ شاٹ بحال کریں",
+  "backupGeneratedMessage": "بیک اپ اسنیپ شاٹ کلپ بورڈ میں کاپی ہو گیا۔",
+  "restoreSuccessMessage": "بیک اپ اسنیپ شاٹ کامیابی سے بحال ہو گیا۔",
+  "restoreInvalidError": "غلط بیک اپ JSON۔",
+  "pasteBackupHint": "بحال کرنے کے لیے بیک اپ JSON یہاں پیسٹ کریں",
+  "driveComingSoonNote": "Google Drive انکرپٹڈ AppData سنک مرحلہ 6 میں شامل ہوگا۔",
+  "emiPdfButton": "EMI PDF",
+  "viewCompletePdfButton": "مکمل قرض PDF",
+  "emiPdfGeneratedMessage": "قسط #{no} ادا ہو گئی اور PDF دستاویزات میں محفوظ ہو گئی۔",
+  "emiReceiptTag": "EMI #{no} رسید",
+  "completeLoanPdfTag": "مکمل قرض PDF",
+  "emiCalculatorTitle": "EMI کیلکولیٹر",
+  "emiCalculatorSubtitle": "قرض بنانے سے پہلے ماہانہ قسط، کل سود اور ادائیگی کے شیڈول کا اندازہ لگائیں۔",
+  "principalShareLabel": "اصل رقم کا حصہ",
+  "interestShareLabel": "سود کا حصہ",
+  "resetFieldsButton": "ری سیٹ",
+  "proceedToCreateLoanButton": "ان شرائط کے ساتھ قرض بنائیں",
+  "schedulePreviewHeading": "شیڈول کا پیش نظارہ",
+  "enterTermsForEstimate": "EMI کا اندازہ دیکھنے کے لیے اصل رقم، ماہانہ شرح اور مدت درج کریں۔",
+  "systemDefaultLanguage": "سسٹم ڈیفالٹ",
+  "choosePhotoTitle": "پروفائل تصویر",
+  "pickFromGallery": "گیلری سے منتخب کریں",
+  "takePhoto": "تصویر کھینچیں",
+  "removePhoto": "تصویر ہٹائیں",
+  "changeAvatarColor": "بیج کا رنگ تبدیل کریں",
+  "photoPickFailedError": "منتخب کردہ تصویر لوڈ نہیں ہو سکی۔",
+  "databaseError": "ڈیٹا مقامی طور پر محفوظ نہیں ہو سکا۔ براہ کرم دوبارہ کوشش کریں۔",
+  "onboardingSkip": "چھوڑیں",
+  "onboardingStart": "شروع کریں",
+  "onboardingNext": "آگے",
+  "onboardingTitle1": "سمارٹ قرض ہب",
+  "onboardingSubtitle1": "صارفین کا انتظام کریں، سادہ یا مرکب سود پر قرض بنائیں اور آف لائن منظم رہیں۔",
+  "onboardingTitle2": "EMI اور کھاتہ ٹریک کریں",
+  "onboardingSubtitle2": "ماہانہ اقساط، مقررہ تاریخیں اور وصولیاں ایک نظر میں دیکھیں۔",
+  "onboardingTitle3": "فوری قرض معاہدے",
+  "onboardingSubtitle3": "مکمل ادائیگی پر 13 زبانوں میں خودکار A4 قرض معاہدہ PDF تیار کریں۔"
+}
