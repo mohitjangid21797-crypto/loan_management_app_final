@@ -29,7 +29,6 @@ class AddEditCustomerScreen extends StatefulWidget {
 
 class _AddEditCustomerScreenState extends State<AddEditCustomerScreen> {
   late final TextEditingController _nameController;
-  late final TextEditingController _emailController;
   late final TextEditingController _mobileController;
   late final TextEditingController _locationController;
 
@@ -46,7 +45,6 @@ class _AddEditCustomerScreenState extends State<AddEditCustomerScreen> {
     super.initState();
     final existing = widget.existingCustomer;
     _nameController = TextEditingController(text: existing?.name ?? '');
-    _emailController = TextEditingController(text: existing?.email ?? '');
     _mobileController = TextEditingController(
       text: existing?.mobile ?? widget.prefilledMobile ?? '',
     );
@@ -64,7 +62,6 @@ class _AddEditCustomerScreenState extends State<AddEditCustomerScreen> {
     _nameController.removeListener(_onFieldChanged);
     _mobileController.removeListener(_onFieldChanged);
     _nameController.dispose();
-    _emailController.dispose();
     _mobileController.dispose();
     _locationController.dispose();
     super.dispose();
@@ -84,7 +81,6 @@ class _AddEditCustomerScreenState extends State<AddEditCustomerScreen> {
   Future<void> _submit() async {
     final l10n = AppLocalizations.of(context);
     final name = _nameController.text.trim();
-    final email = _emailController.text.trim();
     final mobile = _mobileController.text.trim();
     final location = _locationController.text.trim();
 
@@ -94,10 +90,6 @@ class _AddEditCustomerScreenState extends State<AddEditCustomerScreen> {
     }
     if (LoginValidators.validateMobile(mobile) != null) {
       setState(() => _formError = l10n.errorMobileInvalid);
-      return;
-    }
-    if (LoginValidators.validateEmail(email) != null) {
-      setState(() => _formError = l10n.errorEmailInvalid);
       return;
     }
     if (LoanValidators.validateLocation(location) != null) {
@@ -111,7 +103,7 @@ class _AddEditCustomerScreenState extends State<AddEditCustomerScreen> {
       final res = widget.appState.updateCustomer(
         customerId: widget.existingCustomer!.id,
         name: name,
-        email: email,
+        email: widget.existingCustomer!.email,
         mobile: mobile,
         location: location,
       );
@@ -127,7 +119,7 @@ class _AddEditCustomerScreenState extends State<AddEditCustomerScreen> {
 
     final res = widget.appState.createCustomer(
       name: name,
-      email: email,
+      email: '',
       mobile: mobile,
       location: location,
     );
@@ -305,18 +297,6 @@ class _AddEditCustomerScreenState extends State<AddEditCustomerScreen> {
                                 color: colors.textMuted,
                               )
                             : null,
-                      ),
-                    ),
-                    const SizedBox(height: 14),
-                    TextField(
-                      key: const ValueKey('customer_email_field'),
-                      controller: _emailController,
-                      keyboardType: TextInputType.emailAddress,
-                      textInputAction: TextInputAction.next,
-                      decoration: InputDecoration(
-                        labelText: l10n.customerEmailLabel,
-                        hintText: l10n.emailHint,
-                        prefixIcon: const Icon(Icons.mail_outline_rounded),
                       ),
                     ),
                     const SizedBox(height: 14),

@@ -247,10 +247,6 @@ void main() {
           find.byKey(const ValueKey('login_mobile_field')),
           '9876543210',
         );
-        await tester.enterText(
-          find.byKey(const ValueKey('login_email_field')),
-          'sita@loanwise.in',
-        );
         await tester.pump();
 
         final signInBtn = find.byKey(const ValueKey('login_sign_in_button'));

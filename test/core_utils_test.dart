@@ -63,6 +63,11 @@ void main() {
         MobileValidationError.invalid,
       );
       expect(LoginValidators.validateMobile('9876543210'), isNull);
+      expect(LoginValidators.validateEmail(''), isNull);
+      expect(
+        LoginValidators.validateEmail('', required: true),
+        EmailValidationError.invalid,
+      );
       expect(
         LoginValidators.validateEmail('user@domain'),
         EmailValidationError.invalid,
@@ -330,6 +335,66 @@ void main() {
       expect(retry.isSuccess, isTrue);
       expect(store.documents.length, 1);
     });
+
+    test(
+      'paying installment 4 generates PDF containing cumulative installments 1..4 without blank email lines',
+      () {
+        final store = LoanWiseStore.empty(
+          isSignedIn: true,
+          profile: const LenderProfile(
+            name: 'Sita Devi',
+            mobile: '9812345678',
+            email: '',
+          ),
+        );
+        final customer = (store.createCustomer(
+          name: 'Ravi Verma',
+          email: '',
+          mobile: '9876501122',
+          location: 'Jaipur',
+        ) as Success<Customer>)
+            .data;
+        final loan = (store.createLoan(
+          customerId: customer.id,
+          principalPaise: 6000000,
+          monthlyRatePercent: 2.0,
+          tenureMonths: 6,
+          type: LoanType.simple,
+          startDate: DateTime.utc(2026, 1, 10),
+        ) as Success<Loan>)
+            .data;
+
+        final emis = store.emisForLoan(loan.id);
+        late LoanDocument doc4;
+        for (int i = 0; i < 4; i++) {
+          final payRes = store.markEmiPaid(
+            loanId: loan.id,
+            emiId: emis[i].id,
+            paidDate: DateTime.utc(2026, 2 + i, 10),
+          );
+          expect(payRes.isSuccess, isTrue);
+          doc4 = (payRes as Success<LoanPaymentOutcome>)
+              .data
+              .emiReceiptDocument!;
+        }
+
+        expect(doc4.emiInstallmentNo, 4);
+        expect(
+          doc4.snapshot.schedule.map((e) => e.installmentNo).toList(),
+          [1, 2, 3, 4],
+        );
+        expect(
+          doc4.snapshot.schedule.every((e) => e.isPaid),
+          isTrue,
+        );
+        expect(doc4.pageCount, 1);
+        expect(doc4.htmlContent.contains('Email:'), isFalse);
+        for (int no = 1; no <= 4; no++) {
+          expect(doc4.htmlContent.contains('<tr><td>$no</td>'), isTrue);
+        }
+        expect(doc4.htmlContent.contains('<tr><td>5</td>'), isFalse);
+      },
+    );
   });
 
   group('LoanAgreementPdfService pagination & HTML', () {

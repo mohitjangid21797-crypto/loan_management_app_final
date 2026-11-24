@@ -28,15 +28,12 @@ class _LoginScreenState extends State<LoginScreen>
   late final AnimationController _entranceController;
   late final TextEditingController _nameController;
   late final TextEditingController _mobileController;
-  late final TextEditingController _emailController;
 
   late final FocusNode _nameFocus;
   late final FocusNode _mobileFocus;
-  late final FocusNode _emailFocus;
 
   bool _nameTouched = false;
   bool _mobileTouched = false;
-  bool _emailTouched = false;
   bool _submittedOnce = false;
   bool _isSaving = false;
   bool _isButtonPressed = false;
@@ -51,15 +48,12 @@ class _LoginScreenState extends State<LoginScreen>
 
     _nameController = TextEditingController();
     _mobileController = TextEditingController();
-    _emailController = TextEditingController();
 
     _nameFocus = FocusNode()..addListener(_handleFocusChange);
     _mobileFocus = FocusNode()..addListener(_handleFocusChange);
-    _emailFocus = FocusNode()..addListener(_handleFocusChange);
 
     _nameController.addListener(_onFieldChanged);
     _mobileController.addListener(_onFieldChanged);
-    _emailController.addListener(_onFieldChanged);
   }
 
   void _handleFocusChange() {
@@ -68,9 +62,6 @@ class _LoginScreenState extends State<LoginScreen>
     }
     if (!_mobileFocus.hasFocus && _mobileController.text.isNotEmpty) {
       _mobileTouched = true;
-    }
-    if (!_emailFocus.hasFocus && _emailController.text.isNotEmpty) {
-      _emailTouched = true;
     }
     if (mounted) setState(() {});
   }
@@ -92,14 +83,10 @@ class _LoginScreenState extends State<LoginScreen>
     _entranceController.dispose();
     _nameController.dispose();
     _mobileController.dispose();
-    _emailController.dispose();
     _nameFocus
       ..removeListener(_handleFocusChange)
       ..dispose();
     _mobileFocus
-      ..removeListener(_handleFocusChange)
-      ..dispose();
-    _emailFocus
       ..removeListener(_handleFocusChange)
       ..dispose();
     super.dispose();
@@ -108,7 +95,6 @@ class _LoginScreenState extends State<LoginScreen>
   bool get _isFormValid => LoginValidators.isFormValid(
         name: _nameController.text,
         mobile: _mobileController.text,
-        email: _emailController.text,
       );
 
   String? _nameErrorText(AppLocalizations l10n) {
@@ -125,18 +111,11 @@ class _LoginScreenState extends State<LoginScreen>
         : null;
   }
 
-  String? _emailErrorText(AppLocalizations l10n) {
-    if (!_emailTouched && !_submittedOnce) return null;
-    final err = LoginValidators.validateEmail(_emailController.text);
-    return err == EmailValidationError.invalid ? l10n.errorEmailInvalid : null;
-  }
-
   Future<void> _submit() async {
     setState(() {
       _submittedOnce = true;
       _nameTouched = true;
       _mobileTouched = true;
-      _emailTouched = true;
     });
     if (!_isFormValid || _isSaving) return;
 
@@ -152,7 +131,7 @@ class _LoginScreenState extends State<LoginScreen>
       LenderProfile(
         name: _nameController.text.trim(),
         mobile: _mobileController.text.trim(),
-        email: _emailController.text.trim(),
+        email: '',
       ),
     );
     widget.onSignedIn?.call();
@@ -281,29 +260,11 @@ class _LoginScreenState extends State<LoginScreen>
                                     icon: Icons.phone_outlined,
                                     errorText: _mobileErrorText(l10n),
                                     keyboardType: TextInputType.phone,
-                                    textInputAction: TextInputAction.next,
+                                    textInputAction: TextInputAction.done,
                                     inputFormatters: [
                                       FilteringTextInputFormatter.digitsOnly,
                                       LengthLimitingTextInputFormatter(10),
                                     ],
-                                    onSubmitted: (_) =>
-                                        _emailFocus.requestFocus(),
-                                  ),
-                                ),
-                                const SizedBox(height: 16),
-                                _buildStaggered(
-                                  begin: 0.32,
-                                  end: 0.82,
-                                  child: _LoginField(
-                                    key: const ValueKey('login_email_field'),
-                                    controller: _emailController,
-                                    focusNode: _emailFocus,
-                                    label: l10n.emailLabel,
-                                    hint: l10n.emailHint,
-                                    icon: Icons.mail_outline_rounded,
-                                    errorText: _emailErrorText(l10n),
-                                    keyboardType: TextInputType.emailAddress,
-                                    textInputAction: TextInputAction.done,
                                     onSubmitted: (_) => _submit(),
                                   ),
                                 ),

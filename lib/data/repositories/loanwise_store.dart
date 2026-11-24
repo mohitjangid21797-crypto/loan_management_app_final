@@ -1004,6 +1004,11 @@ class LoanWiseStore {
       );
     }
 
+    final includedSchedule = schedule
+        .where((item) => item.installmentNo <= targetEmi!.installmentNo)
+        .toList()
+      ..sort((a, b) => a.installmentNo.compareTo(b.installmentNo));
+
     final localizedStrings =
         LoanAgreementPdfService.stringsForLanguage(languageCode);
     final statusText = targetEmi.isPaid
@@ -1028,7 +1033,7 @@ class LoanWiseStore {
       totalInterestPaise: loan.totalInterestPaise,
       totalPayablePaise: loan.totalPayablePaise,
       statusText: statusText,
-      schedule: [targetEmi],
+      schedule: includedSchedule,
     );
 
     final now = generatedAt ?? DateTime.now().toUtc();
@@ -1040,6 +1045,8 @@ class LoanWiseStore {
       generatedAt: now,
       emiInstallmentNo: targetEmi.installmentNo,
     );
+    final pageCount =
+        LoanAgreementPdfService.paginateInstallments(snapshot.schedule).length;
 
     final doc = LoanDocument(
       id: docId,
@@ -1050,7 +1057,7 @@ class LoanWiseStore {
           '${localizedStrings.headline} - EMI #${targetEmi.installmentNo} (${customer.name} · ${loan.id})',
       snapshot: snapshot,
       htmlContent: html,
-      pageCount: 1,
+      pageCount: pageCount,
       renderPath: 'html_a4',
       createdAt: now,
       updatedAt: now,

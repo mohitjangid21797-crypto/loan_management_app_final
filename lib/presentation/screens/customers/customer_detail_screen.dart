@@ -146,14 +146,16 @@ class CustomerDetailScreen extends StatelessWidget {
                                     color: Colors.white.withValues(alpha: 0.88),
                                   ),
                                 ),
-                                Text(
-                                  customer.email,
-                                  maxLines: 1,
-                                  overflow: TextOverflow.ellipsis,
-                                  style: textTheme.bodySmall?.copyWith(
-                                    color: Colors.white.withValues(alpha: 0.78),
+                                if (customer.email.trim().isNotEmpty)
+                                  Text(
+                                    customer.email,
+                                    maxLines: 1,
+                                    overflow: TextOverflow.ellipsis,
+                                    style: textTheme.bodySmall?.copyWith(
+                                      color:
+                                          Colors.white.withValues(alpha: 0.78),
+                                    ),
                                   ),
-                                ),
                               ],
                             ),
                           ),

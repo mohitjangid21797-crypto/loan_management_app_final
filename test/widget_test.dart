@@ -145,7 +145,7 @@ void main() {
   });
 
   group('LoginScreen widget tests', () {
-    testWidgets('renders three fields and disabled/enabled Sign in button', (
+    testWidgets('renders two fields and disabled/enabled Sign in button', (
       WidgetTester tester,
     ) async {
       final appState = AppState();
@@ -161,7 +161,7 @@ void main() {
 
       expect(find.byKey(const ValueKey('login_name_field')), findsOneWidget);
       expect(find.byKey(const ValueKey('login_mobile_field')), findsOneWidget);
-      expect(find.byKey(const ValueKey('login_email_field')), findsOneWidget);
+      expect(find.byKey(const ValueKey('login_email_field')), findsNothing);
       expect(find.byKey(const ValueKey('login_sign_in_button')), findsOneWidget);
       expect(find.text('Login'), findsOneWidget);
 
@@ -177,10 +177,6 @@ void main() {
         find.byKey(const ValueKey('login_mobile_field')),
         '1234567890',
       );
-      await tester.enterText(
-        find.byKey(const ValueKey('login_email_field')),
-        'invalid-email',
-      );
       await tester.pump();
 
       await tester.tap(find.byKey(const ValueKey('login_name_field')));
@@ -189,16 +185,11 @@ void main() {
         find.text('Enter a 10 digit mobile number starting with 6 to 9'),
         findsOneWidget,
       );
-      expect(find.text('Enter a valid email address'), findsOneWidget);
       expect(appState.isSignedIn, isFalse);
 
       await tester.enterText(
         find.byKey(const ValueKey('login_mobile_field')),
         '9876543210',
-      );
-      await tester.enterText(
-        find.byKey(const ValueKey('login_email_field')),
-        'alex@loanwise.in',
       );
       await tester.pump();
 
@@ -209,6 +200,7 @@ void main() {
       await tester.pumpAndSettle();
       expect(appState.isSignedIn, isTrue);
       expect(appState.profile.name, 'Alex Johnson');
+      expect(appState.profile.email, isEmpty);
     });
 
     for (final width in [320.0, 360.0, 412.0]) {
@@ -392,6 +384,10 @@ void main() {
         await tester.tap(find.byKey(const ValueKey('quick_action_0')));
         await tester.pumpAndSettle();
 
+        expect(
+          find.byKey(const ValueKey('customer_email_field')),
+          findsNothing,
+        );
         await tester.enterText(
           find.byKey(const ValueKey('customer_name_field')),
           'Meera Nair',
@@ -399,10 +395,6 @@ void main() {
         await tester.enterText(
           find.byKey(const ValueKey('customer_mobile_field')),
           '9876501234',
-        );
-        await tester.enterText(
-          find.byKey(const ValueKey('customer_email_field')),
-          'meera@example.in',
         );
         await tester.enterText(
           find.byKey(const ValueKey('customer_location_field')),
@@ -517,9 +509,9 @@ void main() {
             .data;
         final loan = (appState.createLoan(
           customerId: customer.id,
-          principalPaise: 3000000,
+          principalPaise: 6000000,
           monthlyRatePercent: 2.0,
-          tenureMonths: 3,
+          tenureMonths: 6,
           type: LoanType.simple,
           startDate: DateTime.utc(2026, 1, 10),
         ) as Success<Loan>)
@@ -532,31 +524,52 @@ void main() {
         );
         await tester.pumpAndSettle();
 
-        // Pay EMI #1 individually -> EMI #1 receipt PDF generated & EMI PDF button shown.
-        await tester.ensureVisible(find.byKey(const ValueKey('pay_emi_1')));
-        await tester.tap(find.byKey(const ValueKey('pay_emi_1')));
-        await tester.pumpAndSettle();
-        await tester.tap(find.byKey(const ValueKey('confirm_pay_emi_button')));
-        await tester.pumpAndSettle();
+        // Pay EMIs #1..#4 individually -> EMI #4 receipt PDF includes cumulative installments 1, 2, 3, 4.
+        for (int no = 1; no <= 4; no++) {
+          final payFinder = find.byKey(ValueKey('pay_emi_$no'));
+          await tester.scrollUntilVisible(
+            payFinder,
+            180,
+            scrollable: find.byType(Scrollable).first,
+          );
+          await tester.ensureVisible(payFinder);
+          await tester.tap(payFinder);
+          await tester.pumpAndSettle();
+          await tester.tap(find.byKey(const ValueKey('confirm_pay_emi_button')));
+          await tester.pumpAndSettle();
+        }
 
-        expect(appState.documents.length, 1);
-        expect(appState.documents.first.emiInstallmentNo, 1);
-        expect(find.byKey(const ValueKey('emi_pdf_1')), findsOneWidget);
+        final doc4 = appState.store.findDocumentForEmi(loan.id, 4);
+        expect(doc4, isNotNull);
+        expect(
+          doc4!.snapshot.schedule.map((e) => e.installmentNo).toList(),
+          [1, 2, 3, 4],
+        );
+        expect(find.byKey(const ValueKey('emi_pdf_4')), findsOneWidget);
 
-        // Tap EMI PDF button on row 1 -> opens DocumentViewerScreen for EMI #1.
-        await tester.ensureVisible(find.byKey(const ValueKey('emi_pdf_1')));
-        await tester.tap(find.byKey(const ValueKey('emi_pdf_1')));
+        // Tap EMI PDF button on row 4 -> opens DocumentViewerScreen for EMI #4 with rows 1..4.
+        await tester.ensureVisible(find.byKey(const ValueKey('emi_pdf_4')));
+        await tester.tap(find.byKey(const ValueKey('emi_pdf_4')));
         await tester.pumpAndSettle();
-        expect(find.textContaining('EMI #1'), findsAtLeastNWidgets(1));
+        expect(find.textContaining('EMI #4'), findsAtLeastNWidgets(1));
+        expect(find.text('1'), findsAtLeastNWidgets(1));
+        expect(find.text('2'), findsAtLeastNWidgets(1));
+        expect(find.text('3'), findsAtLeastNWidgets(1));
+        expect(find.text('4'), findsAtLeastNWidgets(1));
 
         // Return to LoanOverviewScreen and pay all remaining EMIs at once -> Complete Loan PDF.
         await tester.pageBack();
         await tester.pumpAndSettle();
 
-        await tester.ensureVisible(
-          find.byKey(const ValueKey('pay_all_pending_button')),
+        final payAllFinder =
+            find.byKey(const ValueKey('pay_all_pending_button'));
+        await tester.scrollUntilVisible(
+          payAllFinder,
+          -250,
+          scrollable: find.byType(Scrollable).first,
         );
-        await tester.tap(find.byKey(const ValueKey('pay_all_pending_button')));
+        await tester.ensureVisible(payAllFinder);
+        await tester.tap(payAllFinder);
         await tester.pumpAndSettle();
         await tester.tap(find.byKey(const ValueKey('confirm_pay_all_button')));
         await tester.pumpAndSettle();

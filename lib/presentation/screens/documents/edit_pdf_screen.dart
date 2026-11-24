@@ -136,7 +136,12 @@ class _EditPdfScreenState extends State<EditPdfScreen> {
       startDate: _startDate,
     );
 
-    final rebuiltSchedule = calc.rows.map((row) {
+    final emiNo = widget.document.emiInstallmentNo;
+    final filteredRows = emiNo == null
+        ? calc.rows
+        : calc.rows.where((row) => row.installmentNo <= emiNo);
+
+    final rebuiltSchedule = filteredRows.map((row) {
       final previous = oldByNo[row.installmentNo];
       final preservePaid = previous != null && previous.isPaid;
       return EmiScheduleItem(
@@ -182,6 +187,7 @@ class _EditPdfScreenState extends State<EditPdfScreen> {
       snapshot: snapshot,
       languageCode: _languageCode,
       generatedAt: now,
+      emiInstallmentNo: widget.document.emiInstallmentNo,
     );
     final pageCount =
         LoanAgreementPdfService.paginateInstallments(snapshot.schedule).length;

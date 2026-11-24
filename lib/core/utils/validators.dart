@@ -34,8 +34,15 @@ class LoginValidators {
     return null;
   }
 
-  static EmailValidationError? validateEmail(String value) {
-    if (!_emailRegex.hasMatch(value.trim())) {
+  static EmailValidationError? validateEmail(
+    String value, {
+    bool required = false,
+  }) {
+    final trimmed = value.trim();
+    if (trimmed.isEmpty) {
+      return required ? EmailValidationError.invalid : null;
+    }
+    if (!_emailRegex.hasMatch(trimmed)) {
       return EmailValidationError.invalid;
     }
     return null;
@@ -44,7 +51,7 @@ class LoginValidators {
   static bool isFormValid({
     required String name,
     required String mobile,
-    required String email,
+    String email = '',
   }) {
     return validateName(name) == null &&
         validateMobile(mobile) == null &&

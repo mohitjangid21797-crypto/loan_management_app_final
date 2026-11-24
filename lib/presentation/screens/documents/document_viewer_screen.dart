@@ -291,7 +291,8 @@ class _A4PageSheet extends StatelessWidget {
                         lines: [
                           '${pdfStrings.name}: ${snapshot.lenderName}',
                           '${pdfStrings.mobile}: ${snapshot.lenderMobile}',
-                          '${pdfStrings.email}: ${snapshot.lenderEmail}',
+                          if (snapshot.lenderEmail.trim().isNotEmpty)
+                            '${pdfStrings.email}: ${snapshot.lenderEmail}',
                         ],
                         textTheme: textTheme,
                       ),
@@ -303,7 +304,8 @@ class _A4PageSheet extends StatelessWidget {
                         lines: [
                           '${pdfStrings.name}: ${snapshot.borrowerName}',
                           '${pdfStrings.mobile}: ${snapshot.borrowerMobile}',
-                          '${pdfStrings.email}: ${snapshot.borrowerEmail}',
+                          if (snapshot.borrowerEmail.trim().isNotEmpty)
+                            '${pdfStrings.email}: ${snapshot.borrowerEmail}',
                           '${pdfStrings.location}: ${snapshot.borrowerLocation}',
                         ],
                         textTheme: textTheme,

@@ -401,10 +401,6 @@ void main() {
           find.byKey(const ValueKey('login_mobile_field')),
           '9876543210',
         );
-        await tester.enterText(
-          find.byKey(const ValueKey('login_email_field')),
-          'vikram@loanwise.in',
-        );
         await tester.pump();
         final signInBtn = find.byKey(const ValueKey('login_sign_in_button'));
         await tester.ensureVisible(signInBtn);
@@ -418,10 +414,6 @@ void main() {
         await tester.enterText(
           find.byKey(const ValueKey('customer_name_field')),
           'Neha Kapoor',
-        );
-        await tester.enterText(
-          find.byKey(const ValueKey('customer_email_field')),
-          'neha@example.com',
         );
         await tester.enterText(
           find.byKey(const ValueKey('customer_mobile_field')),
@@ -561,10 +553,6 @@ void main() {
         await tester.enterText(
           find.byKey(const ValueKey('login_mobile_field')),
           '9876543210',
-        );
-        await tester.enterText(
-          find.byKey(const ValueKey('login_email_field')),
-          'ananya@loanwise.in',
         );
         await tester.pump();
         final signInBtn = find.byKey(const ValueKey('login_sign_in_button'));

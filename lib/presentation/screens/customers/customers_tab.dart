@@ -328,25 +328,27 @@ class _CustomersTabState extends State<CustomersTab> {
                                             ),
                                           ],
                                         ),
-                                        const SizedBox(height: 3),
-                                        Row(
-                                          children: [
-                                            Icon(
-                                              Icons.mail_outline_rounded,
-                                              size: 14,
-                                              color: colors.textMuted,
-                                            ),
-                                            const SizedBox(width: 5),
-                                            Expanded(
-                                              child: Text(
-                                                customer.email,
-                                                maxLines: 1,
-                                                overflow: TextOverflow.ellipsis,
-                                                style: textTheme.bodySmall,
+                                        if (customer.email.trim().isNotEmpty) ...[
+                                          const SizedBox(height: 3),
+                                          Row(
+                                            children: [
+                                              Icon(
+                                                Icons.mail_outline_rounded,
+                                                size: 14,
+                                                color: colors.textMuted,
                                               ),
-                                            ),
-                                          ],
-                                        ),
+                                              const SizedBox(width: 5),
+                                              Expanded(
+                                                child: Text(
+                                                  customer.email,
+                                                  maxLines: 1,
+                                                  overflow: TextOverflow.ellipsis,
+                                                  style: textTheme.bodySmall,
+                                                ),
+                                              ),
+                                            ],
+                                          ),
+                                        ],
                                       ],
                                     ),
                                   ),
