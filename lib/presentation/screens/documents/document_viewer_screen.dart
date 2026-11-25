@@ -304,8 +304,6 @@ class _A4PageSheet extends StatelessWidget {
                         lines: [
                           '${pdfStrings.name}: ${snapshot.borrowerName}',
                           '${pdfStrings.mobile}: ${snapshot.borrowerMobile}',
-                          if (snapshot.borrowerEmail.trim().isNotEmpty)
-                            '${pdfStrings.email}: ${snapshot.borrowerEmail}',
                           '${pdfStrings.location}: ${snapshot.borrowerLocation}',
                         ],
                         textTheme: textTheme,

@@ -1,4 +1,3 @@
-import 'package:flutter/services.dart';
 import 'package:loan_management_app/core/theme/app_theme.dart';
 import 'package:loan_management_app/core/utils/date_utils.dart';
 import 'package:loan_management_app/core/utils/indian_currency_formatter.dart';
@@ -11,7 +10,6 @@ import 'package:loan_management_app/presentation/widgets/common/fintech_ui.dart'
 import 'package:loan_management_app/presentation/widgets/common/loan_status_chip.dart';
 import 'package:loan_management_app/state/app_state.dart';
 import 'package:material_ui/material_ui.dart';
-import 'package:url_launcher/url_launcher.dart';
 
 class CustomerDetailScreen extends StatelessWidget {
   const CustomerDetailScreen({
@@ -22,37 +20,6 @@ class CustomerDetailScreen extends StatelessWidget {
 
   final AppState appState;
   final String customerId;
-
-  Future<void> _launchContactAction(
-    BuildContext context, {
-    required String actionName,
-    required String scheme,
-    required String mobile,
-  }) async {
-    final l10n = AppLocalizations.of(context);
-    final uri = Uri(scheme: scheme, path: mobile);
-    var launched = false;
-    try {
-      if (await canLaunchUrl(uri)) {
-        launched = await launchUrl(uri, mode: LaunchMode.externalApplication);
-      }
-    } catch (_) {
-      launched = false;
-    }
-
-    if (!launched) {
-      await Clipboard.setData(ClipboardData(text: mobile));
-      if (!context.mounted) return;
-      ScaffoldMessenger.of(context)
-        ..hideCurrentSnackBar()
-        ..showSnackBar(
-          SnackBar(
-            behavior: SnackBarBehavior.floating,
-            content: Text(l10n.featureQueuedMessage('$actionName · $mobile')),
-          ),
-        );
-    }
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -184,85 +151,25 @@ class CustomerDetailScreen extends StatelessWidget {
                 const SizedBox(height: 14),
                 FintechSurfaceCard(
                   padding: const EdgeInsets.all(14),
-                  child: Column(
-                    children: [
-                      Row(
-                        children: [
-                          Expanded(
-                            child: OutlinedButton.icon(
-                              style: OutlinedButton.styleFrom(
-                                padding: const EdgeInsets.symmetric(
-                                  horizontal: 10,
-                                  vertical: 12,
-                                ),
-                              ),
-                              onPressed: () => _launchContactAction(
-                                context,
-                                actionName: l10n.callAction,
-                                scheme: 'tel',
-                                mobile: customer.mobile,
-                              ),
-                              icon: Icon(
-                                Icons.call_outlined,
-                                size: 18,
-                                color: colors.primary,
-                              ),
-                              label: FittedBox(
-                                fit: BoxFit.scaleDown,
-                                child: Text(l10n.callAction),
-                              ),
+                  child: SizedBox(
+                    width: double.infinity,
+                    child: FilledButton.icon(
+                      style: FilledButton.styleFrom(
+                        backgroundColor: colors.primary,
+                      ),
+                      onPressed: () {
+                        Navigator.of(context).push(
+                          MaterialPageRoute<void>(
+                            builder: (_) => CreateLoanScreen(
+                              appState: appState,
+                              preselectedCustomer: customer,
                             ),
                           ),
-                          const SizedBox(width: 10),
-                          Expanded(
-                            child: OutlinedButton.icon(
-                              style: OutlinedButton.styleFrom(
-                                padding: const EdgeInsets.symmetric(
-                                  horizontal: 10,
-                                  vertical: 12,
-                                ),
-                              ),
-                              onPressed: () => _launchContactAction(
-                                context,
-                                actionName: l10n.smsAction,
-                                scheme: 'sms',
-                                mobile: customer.mobile,
-                              ),
-                              icon: Icon(
-                                Icons.sms_outlined,
-                                size: 18,
-                                color: colors.success,
-                              ),
-                              label: FittedBox(
-                                fit: BoxFit.scaleDown,
-                                child: Text(l10n.smsAction),
-                              ),
-                            ),
-                          ),
-                        ],
-                      ),
-                      const SizedBox(height: 10),
-                      SizedBox(
-                        width: double.infinity,
-                        child: FilledButton.icon(
-                          style: FilledButton.styleFrom(
-                            backgroundColor: colors.primary,
-                          ),
-                          onPressed: () {
-                            Navigator.of(context).push(
-                              MaterialPageRoute<void>(
-                                builder: (_) => CreateLoanScreen(
-                                  appState: appState,
-                                  preselectedCustomer: customer,
-                                ),
-                              ),
-                            );
-                          },
-                          icon: const Icon(Icons.add_card_rounded),
-                          label: Text(l10n.createLoanMenu),
-                        ),
-                      ),
-                    ],
+                        );
+                      },
+                      icon: const Icon(Icons.add_card_rounded),
+                      label: Text(l10n.createLoanMenu),
+                    ),
                   ),
                 ),
                 const SizedBox(height: 20),

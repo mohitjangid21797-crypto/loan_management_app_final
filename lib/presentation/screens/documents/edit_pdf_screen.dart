@@ -30,7 +30,6 @@ class EditPdfScreen extends StatefulWidget {
 class _EditPdfScreenState extends State<EditPdfScreen> {
   late final TextEditingController _nameController;
   late final TextEditingController _mobileController;
-  late final TextEditingController _emailController;
   late final TextEditingController _locationController;
   late final TextEditingController _principalController;
   late final TextEditingController _rateController;
@@ -48,7 +47,6 @@ class _EditPdfScreenState extends State<EditPdfScreen> {
     final snap = widget.document.snapshot;
     _nameController = TextEditingController(text: snap.borrowerName);
     _mobileController = TextEditingController(text: snap.borrowerMobile);
-    _emailController = TextEditingController(text: snap.borrowerEmail);
     _locationController = TextEditingController(text: snap.borrowerLocation);
     _principalController = TextEditingController(
       text: (snap.principalPaise / 100.0).toStringAsFixed(0),
@@ -69,7 +67,6 @@ class _EditPdfScreenState extends State<EditPdfScreen> {
   void dispose() {
     _nameController.dispose();
     _mobileController.dispose();
-    _emailController.dispose();
     _locationController.dispose();
     _principalController.dispose();
     _rateController.dispose();
@@ -82,7 +79,6 @@ class _EditPdfScreenState extends State<EditPdfScreen> {
     final l10n = AppLocalizations.of(context);
     final name = _nameController.text.trim();
     final mobile = _mobileController.text.trim();
-    final email = _emailController.text.trim();
     final location = _locationController.text.trim();
 
     if (LoginValidators.validateName(name) != null) {
@@ -91,10 +87,6 @@ class _EditPdfScreenState extends State<EditPdfScreen> {
     }
     if (LoginValidators.validateMobile(mobile) != null) {
       setState(() => _validationError = l10n.errorMobileInvalid);
-      return null;
-    }
-    if (LoginValidators.validateEmail(email) != null) {
-      setState(() => _validationError = l10n.errorEmailInvalid);
       return null;
     }
     if (LoanValidators.validateLocation(location) != null) {
@@ -161,7 +153,7 @@ class _EditPdfScreenState extends State<EditPdfScreen> {
     return widget.document.snapshot.copyWith(
       borrowerName: name,
       borrowerMobile: mobile,
-      borrowerEmail: email,
+      borrowerEmail: '',
       borrowerLocation: location,
       principalPaise: principalPaise,
       monthlyRatePercent: ratePercent,
@@ -310,14 +302,6 @@ class _EditPdfScreenState extends State<EditPdfScreen> {
                       icon: Icons.phone_outlined,
                       keyboardType: TextInputType.phone,
                       maxLength: 10,
-                    ),
-                    const SizedBox(height: 12),
-                    _SnapshotField(
-                      key: const ValueKey('edit_pdf_email'),
-                      controller: _emailController,
-                      label: l10n.customerEmailLabel,
-                      icon: Icons.mail_outline_rounded,
-                      keyboardType: TextInputType.emailAddress,
                     ),
                     const SizedBox(height: 12),
                     _SnapshotField(

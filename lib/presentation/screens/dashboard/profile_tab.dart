@@ -28,7 +28,6 @@ class ProfileTab extends StatefulWidget {
 class _ProfileTabState extends State<ProfileTab> {
   late final TextEditingController _nameController;
   late final TextEditingController _mobileController;
-  late final TextEditingController _emailController;
   late int _avatarIndex;
   late final ProfilePhotoService _photoService;
   String? _photoPath;
@@ -52,7 +51,6 @@ class _ProfileTabState extends State<ProfileTab> {
     _lastSyncedProfile = p;
     _nameController = TextEditingController(text: p.name);
     _mobileController = TextEditingController(text: p.mobile);
-    _emailController = TextEditingController(text: p.email);
     _avatarIndex = p.avatarIndex % _avatarColors.length;
     _photoPath = p.photoPath;
     widget.appState.addListener(_syncFromAppState);
@@ -62,13 +60,11 @@ class _ProfileTabState extends State<ProfileTab> {
     final p = widget.appState.profile;
     if (p.name != _lastSyncedProfile.name ||
         p.mobile != _lastSyncedProfile.mobile ||
-        p.email != _lastSyncedProfile.email ||
         p.avatarIndex != _lastSyncedProfile.avatarIndex ||
         p.photoPath != _lastSyncedProfile.photoPath) {
       _lastSyncedProfile = p;
       _nameController.text = p.name;
       _mobileController.text = p.mobile;
-      _emailController.text = p.email;
       _avatarIndex = p.avatarIndex % _avatarColors.length;
       _photoPath = p.photoPath;
     }
@@ -79,7 +75,6 @@ class _ProfileTabState extends State<ProfileTab> {
     widget.appState.removeListener(_syncFromAppState);
     _nameController.dispose();
     _mobileController.dispose();
-    _emailController.dispose();
     super.dispose();
   }
 
@@ -188,7 +183,6 @@ class _ProfileTabState extends State<ProfileTab> {
     final l10n = AppLocalizations.of(context);
     final name = _nameController.text.trim();
     final mobile = _mobileController.text.trim();
-    final email = _emailController.text.trim();
 
     if (LoginValidators.validateName(name) != null) {
       setState(() => _errorText = l10n.errorNameRequired);
@@ -198,17 +192,12 @@ class _ProfileTabState extends State<ProfileTab> {
       setState(() => _errorText = l10n.errorMobileInvalid);
       return;
     }
-    if (LoginValidators.validateEmail(email) != null) {
-      setState(() => _errorText = l10n.errorEmailInvalid);
-      return;
-    }
 
     setState(() => _errorText = null);
     widget.appState.updateProfile(
       widget.appState.profile.copyWith(
         name: name,
         mobile: mobile,
-        email: email,
         avatarIndex: _avatarIndex,
         photoPath: _photoPath,
         clearPhotoPath: _photoPath == null,
@@ -495,16 +484,6 @@ class _ProfileTabState extends State<ProfileTab> {
                         counterText: '',
                         labelText: l10n.mobileLabel,
                         prefixIcon: const Icon(Icons.phone_outlined),
-                      ),
-                    ),
-                    const SizedBox(height: 12),
-                    TextField(
-                      key: const ValueKey('profile_email_field'),
-                      controller: _emailController,
-                      keyboardType: TextInputType.emailAddress,
-                      decoration: InputDecoration(
-                        labelText: l10n.emailLabel,
-                        prefixIcon: const Icon(Icons.mail_outline_rounded),
                       ),
                     ),
                     if (_errorText != null) ...[

@@ -246,13 +246,7 @@ section.page.last { page-break-after: auto; }
           )
           ..writeln(
             '    <div>${esc(s.mobile)}: ${esc(snapshot.borrowerMobile)}</div>',
-          );
-        if (snapshot.borrowerEmail.trim().isNotEmpty) {
-          buf.writeln(
-            '    <div>${esc(s.email)}: ${esc(snapshot.borrowerEmail)}</div>',
-          );
-        }
-        buf
+          )
           ..writeln(
             '    <div>${esc(s.location)}: ${esc(snapshot.borrowerLocation)}</div>',
           )
@@ -526,11 +520,6 @@ section.page.last { page-break-after: auto; }
                                   '${safeText(s.mobile, en.mobile)}: ${snapshot.borrowerMobile}',
                                   style: baseStyle.copyWith(fontSize: 7),
                                 ),
-                                if (snapshot.borrowerEmail.trim().isNotEmpty)
-                                  pw.Text(
-                                    '${safeText(s.email, en.email)}: ${safeText(snapshot.borrowerEmail)}',
-                                    style: baseStyle.copyWith(fontSize: 7),
-                                  ),
                                 pw.Text(
                                   '${safeText(s.location, en.location)}: ${safeText(snapshot.borrowerLocation)}',
                                   style: baseStyle.copyWith(fontSize: 7),

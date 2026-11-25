@@ -467,6 +467,8 @@ void main() {
         lessThan(htmlEn.indexOf('data-role="borrower"')),
       );
       expect(htmlEn.contains('John Doe'), isFalse);
+      expect(htmlEn.contains('zoya@example.in'), isFalse);
+      expect(htmlEn.contains('alex@loanwise.in'), isTrue);
 
       final htmlUr = LoanAgreementPdfService.buildDocumentHtml(
         documentId: 'DOC-1',

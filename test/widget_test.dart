@@ -742,4 +742,124 @@ void main() {
       );
     }
   });
+
+  group('Removed contact & email fields verification', () {
+    testWidgets(
+      'CustomerDetailScreen hides Call and SMS buttons and keeps Create Loan',
+      (WidgetTester tester) async {
+        final appState = AppState(initialSignedIn: true);
+        final customer = (appState.createCustomer(
+          name: 'Meera Nair',
+          email: '',
+          mobile: '9876501234',
+          location: 'Kochi',
+        ) as Success<Customer>)
+            .data;
+
+        await tester.pumpWidget(
+          _wrapScreen(
+            child: CustomerDetailScreen(
+              appState: appState,
+              customerId: customer.id,
+            ),
+          ),
+        );
+        await tester.pumpAndSettle();
+
+        expect(find.byIcon(Icons.call_outlined), findsNothing);
+        expect(find.byIcon(Icons.sms_outlined), findsNothing);
+        expect(find.text('Call'), findsNothing);
+        expect(find.text('SMS'), findsNothing);
+        expect(find.text('Create Loan'), findsOneWidget);
+      },
+    );
+
+    testWidgets(
+      'ProfileTab omits email field in Lender Details and saves name and mobile',
+      (WidgetTester tester) async {
+        final appState = AppState(
+          initialSignedIn: true,
+          initialProfile: const LenderProfile(
+            name: 'Sita Devi',
+            mobile: '9812345678',
+            email: '',
+          ),
+        );
+
+        await tester.pumpWidget(
+          _wrapScreen(
+            child: Scaffold(
+              body: ProfileTab(appState: appState, onOpenDrawer: () {}),
+            ),
+          ),
+        );
+        await tester.pumpAndSettle();
+
+        expect(find.byKey(const ValueKey('profile_name_field')), findsOneWidget);
+        expect(
+          find.byKey(const ValueKey('profile_mobile_field')),
+          findsOneWidget,
+        );
+        expect(find.byKey(const ValueKey('profile_email_field')), findsNothing);
+
+        await tester.enterText(
+          find.byKey(const ValueKey('profile_name_field')),
+          'Sita R. Devi',
+        );
+        await tester.ensureVisible(
+          find.byKey(const ValueKey('profile_save_button')),
+        );
+        await tester.tap(find.byKey(const ValueKey('profile_save_button')));
+        await tester.pumpAndSettle();
+
+        expect(appState.profile.name, 'Sita R. Devi');
+      },
+    );
+
+    testWidgets(
+      'EditPdfScreen and DocumentViewerScreen omit borrower email',
+      (WidgetTester tester) async {
+        final appState = AppState(
+          initialSignedIn: true,
+          initialProfile: const LenderProfile(
+            name: 'Sita Devi',
+            mobile: '9812345678',
+            email: '',
+          ),
+        );
+        final customer = (appState.createCustomer(
+          name: 'Meera Nair',
+          email: 'meera@example.in',
+          mobile: '9876501234',
+          location: 'Kochi',
+        ) as Success<Customer>)
+            .data;
+        final loan = (appState.createLoan(
+          customerId: customer.id,
+          principalPaise: 5000000,
+          monthlyRatePercent: 2.0,
+          tenureMonths: 3,
+          type: LoanType.simple,
+          startDate: DateTime.utc(2026, 1, 10),
+        ) as Success<Loan>)
+            .data;
+        appState.payAllPendingEmis(
+          loanId: loan.id,
+          paidDate: DateTime.utc(2026, 1, 15),
+        );
+        final doc = appState.documents.first;
+
+        expect(doc.snapshot.borrowerEmail, isEmpty);
+        expect(doc.htmlContent.contains('meera@example.in'), isFalse);
+
+        await tester.pumpWidget(
+          _wrapScreen(
+            child: EditPdfScreen(appState: appState, document: doc),
+          ),
+        );
+        await tester.pumpAndSettle();
+        expect(find.byKey(const ValueKey('edit_pdf_email')), findsNothing);
+      },
+    );
+  });
 }
